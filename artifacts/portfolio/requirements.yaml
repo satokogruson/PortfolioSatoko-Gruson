@@ -1,0 +1,17 @@
+packages:
+  "framer-motion": "For smooth page transitions, scroll reveals, and elegant micro-interactions."
+  "clsx": "Utility for constructing className strings conditionally."
+  "tailwind-merge": "Utility to efficiently merge Tailwind CSS classes without style conflicts."
+  "lucide-react": "Beautiful, consistent iconography for the portfolio."
+
+images:
+  - path: "artifacts/portfolio/public/images/hero-bg.png"
+    description: "Soft elegant abstract mesh gradient background in warm blush pink, cream, and subtle gold. Minimalist, premium feminine aesthetic with soft light leaks and no harsh lines."
+    aspect_ratio: "16:9"
+  - path: "artifacts/portfolio/public/images/about-illustration.png"
+    description: "Minimalist elegant line art and abstract shapes in warm blush, soft beige, and terracotta. Artistic, professional, representing creativity and communication."
+    aspect_ratio: "1:1"
+
+notes:
+  - Hardcoded portfolio data is used as there is no backend required for this static presentation.
+  - Smooth scrolling is applied via CSS for anchor link navigation.
