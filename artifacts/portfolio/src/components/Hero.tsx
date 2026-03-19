@@ -13,12 +13,12 @@ export function Hero() {
         <img
           src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
           alt="Abstract elegant background"
-          className="w-full h-full object-cover object-center opacity-25"
+          className="w-full h-full object-cover object-center opacity-40"
         />
         <div
           className="absolute inset-0"
           style={{
-            background: "linear-gradient(to bottom, hsl(345 48% 28% / 0.3), hsl(345 48% 32% / 0.7) 60%, hsl(345 48% 32%))",
+            background: "linear-gradient(to bottom, hsl(345 48% 28% / 0.55), hsl(345 48% 32% / 0.80) 60%, hsl(345 48% 32%))",
           }}
         />
       </div>
