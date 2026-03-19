@@ -12,10 +12,10 @@ const fireflyProcess = [
 ];
 
 const fireflyPageSections = [
-  { label: "Hero section + CTA", detail: "Culturalised hero with Japanese model and Japanese-language headline targeting SNS creators — with a strategically placed CTA to drive direct Firefly app entry from the first touchpoint" },
-  { label: "SNS Video Creation", detail: "Use case: creating videos for social media — storyboard → generate → post" },
-  { label: "Product Imagery", detail: "Use case: generating eye-catching product visuals for SNS posts — helping creators elevate the quality of content they share on Instagram, TikTok, and X" },
-  { label: "UI & Use Case Examples", detail: "Showcased Firefly's UI through culturalised use case examples relevant to Japanese creators — illustrating how the tool fits into real creative workflows" },
+  { label: "Hero + App CTA", detail: "Main messaging section — culturalised hero with Japanese-language headline targeting SNS creators, with a prominent CTA driving direct Firefly app entry from the very first touchpoint" },
+  { label: "Food Use Case", detail: "Use case example built around food content creation — one of the most popular prompt themes among Japanese SNS creators according to survey data. Showcased how Firefly generates visuals creators can immediately post on Instagram or TikTok" },
+  { label: "Fashion Use Case", detail: "Use case example built around fashion content — another top prompt category from survey findings. Demonstrated how creators can generate on-trend, shareable visuals without professional equipment or photography" },
+  { label: "Storyboard Feature", detail: "Highlighted Firefly's Storyboard feature as a brainstorming tool — helping SNS creators plan and visualise post sequences and creative concepts before generating final assets" },
 ];
 
 const fireflyOutcomes = [
