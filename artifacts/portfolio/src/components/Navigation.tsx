@@ -39,8 +39,11 @@ export function Navigation() {
           <img
             src="/images/sg-logo.png"
             alt="SG Logo"
-            className="h-10 w-10 object-contain"
-            style={{ filter: "sepia(1) saturate(2) hue-rotate(318deg) brightness(0.75)" }}
+            className="h-10 w-10 object-contain transition-all duration-300"
+            style={isScrolled
+              ? { filter: "sepia(1) saturate(2) hue-rotate(318deg) brightness(0.75)" }
+              : { filter: "brightness(0) invert(1)" }
+            }
           />
         </a>
 
@@ -50,15 +53,28 @@ export function Navigation() {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors relative group"
+              className={cn(
+                "text-sm font-medium transition-colors relative group",
+                isScrolled
+                  ? "text-foreground/80 hover:text-primary"
+                  : "text-white/80 hover:text-white"
+              )}
             >
               {link.name}
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+              <span className={cn(
+                "absolute -bottom-1 left-0 w-0 h-0.5 transition-all duration-300 group-hover:w-full",
+                isScrolled ? "bg-primary" : "bg-white"
+              )} />
             </a>
           ))}
           <a
             href="mailto:fsjm1210@gmail.com"
-            className="px-5 py-2.5 rounded-full text-sm font-medium bg-foreground text-background hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+            className={cn(
+              "px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5",
+              isScrolled
+                ? "bg-foreground text-background hover:bg-primary hover:text-primary-foreground"
+                : "bg-white/15 text-white border border-white/30 hover:bg-white hover:text-[hsl(345_48%_32%)]"
+            )}
           >
             Let's Talk
           </a>
