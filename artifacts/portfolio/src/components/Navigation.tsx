@@ -34,17 +34,14 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a 
           href="#top" 
-          className="flex items-center gap-3 group"
+          className="flex items-center"
         >
           <img
             src="/images/sg-logo.png"
             alt="SG Logo"
-            className="h-10 w-10 object-contain transition-all duration-300"
+            className="h-10 w-10 object-contain"
             style={{ filter: "sepia(1) saturate(2) hue-rotate(318deg) brightness(0.75)" }}
           />
-          <span className="font-serif text-xl font-semibold tracking-wide text-foreground group-hover:text-primary transition-colors duration-300">
-            Satoko Gruson
-          </span>
         </a>
 
         {/* Desktop Nav */}
