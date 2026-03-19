@@ -40,16 +40,41 @@ export function PasswordGate({ children }: PasswordGateProps) {
   }
 
   return (
-    <div className="py-24 md:py-32 flex flex-col items-center justify-center">
+    <div
+      className="relative py-14 md:py-20 flex flex-col items-center justify-center overflow-hidden"
+      style={{ background: "hsl(350 30% 96%)" }}
+    >
+      {/* Dot grid */}
       <div
-        className={`max-w-md w-full mx-auto px-6 text-center transition-transform ${shake ? "animate-shake" : ""}`}
+        className="absolute inset-0 pointer-events-none opacity-40"
+        style={{
+          backgroundImage: "radial-gradient(circle, hsl(350 40% 65% / 0.5) 1px, transparent 1px)",
+          backgroundSize: "26px 26px",
+        }}
+      />
+      {/* Soft orb */}
+      <div
+        className="absolute pointer-events-none rounded-full"
+        style={{
+          width: 400,
+          height: 400,
+          top: "50%",
+          left: "50%",
+          transform: "translate(-50%, -50%)",
+          background: "radial-gradient(circle, hsl(350 60% 85% / 0.35) 0%, transparent 70%)",
+          filter: "blur(50px)",
+        }}
+      />
+
+      <div
+        className={`relative z-10 max-w-md w-full mx-auto px-6 text-center transition-transform ${shake ? "animate-shake" : ""}`}
         style={shake ? { animation: "shake 0.5s ease" } : {}}
       >
-        <div className="w-16 h-16 rounded-full bg-primary/10 border border-primary/20 flex items-center justify-center mx-auto mb-6">
-          <Lock size={24} className="text-primary" />
+        <div className="w-14 h-14 rounded-full bg-primary/15 border border-primary/25 flex items-center justify-center mx-auto mb-5">
+          <Lock size={20} className="text-primary" />
         </div>
         <h3 className="text-2xl font-serif text-foreground mb-2">Protected Content</h3>
-        <p className="text-muted-foreground text-sm mb-8 leading-relaxed">
+        <p className="text-muted-foreground text-sm mb-7 leading-relaxed">
           This section contains confidential case study work.<br />
           Enter the password to view it.
         </p>
@@ -62,7 +87,7 @@ export function PasswordGate({ children }: PasswordGateProps) {
               onChange={(e) => { setInput(e.target.value); setError(false); }}
               placeholder="Enter password"
               autoFocus
-              className={`w-full px-5 py-3.5 pr-12 rounded-full border text-sm bg-background text-foreground outline-none transition-all duration-200 ${
+              className={`w-full px-5 py-3.5 pr-12 rounded-full border text-sm bg-background/80 backdrop-blur text-foreground outline-none transition-all duration-200 ${
                 error
                   ? "border-destructive ring-2 ring-destructive/20"
                   : "border-border focus:border-primary focus:ring-2 focus:ring-primary/20"
