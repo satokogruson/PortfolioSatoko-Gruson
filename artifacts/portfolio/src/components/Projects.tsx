@@ -4,7 +4,7 @@ import { projectsData, ProjectCategory } from "@/data/projects";
 import { ProjectCard } from "./ProjectCard";
 import { cn } from "@/lib/utils";
 
-const categories: ProjectCategory[] = ["Frontend", "UI/UX", "Challenges", "Others"];
+const categories: ProjectCategory[] = ["Frontend", "UI/UX", "Others"];
 
 export function Projects() {
   const [activeTab, setActiveTab] = useState<ProjectCategory | "All">("All");

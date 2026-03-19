@@ -1,4 +1,4 @@
-export type ProjectCategory = "UI/UX" | "Frontend" | "Challenges" | "Others";
+export type ProjectCategory = "UI/UX" | "Frontend" | "Others";
 
 export interface Project {
   id: string;
@@ -78,36 +78,6 @@ export const projectsData: Project[] = [
     image: "https://satokogruson.github.io/img/Traveco.png"
   },
 
-  // CHALLENGES
-  {
-    id: "must-have-accessory",
-    title: "My Must-have Accessory",
-    description: "The SheCodes Monthly challenge for 'Must-have Accessory' to celebrate the accessory I can't live without.",
-    category: "Challenges",
-    link: "https://www.shecodes.io/contests/must-have-accessory-challenge/contest_entries/satoko-gruson-japanese-fe2911b6-6f45-4a2f-b15a-6328e629266e/preview"
-  },
-  {
-    id: "urban-garden",
-    title: "Urban Garden",
-    description: "The SheCodes Monthly challenge for 'Urban Garden' that brings the essence of an urban garden.",
-    category: "Challenges",
-    link: "https://www.shecodes.io/contests/urban-garden-challenge/contest_entries/satoko-gruson-japanese-200a1a8c-09c6-4363-9407-ad5bc8ddc580/preview/"
-  },
-  {
-    id: "trendy-clothing",
-    title: "Trendy Clothing Brand",
-    description: "The SheCodes monthly challenge for 'Trendy Clothing Brand' to showcase a trendy clothing brand.",
-    category: "Challenges",
-    link: "https://www.shecodes.io/contests/trendsetting-clothing-brands-challenge/contest_entries/satoko-gruson-japanese-b6708107-983a-4f99-9999-b994c72a9440/preview"
-  },
-  {
-    id: "coding-journey",
-    title: "My Coding Journey",
-    description: "The SheCodes monthly challenge for 'Your Coding Journey' to unleash my coding skills.",
-    category: "Challenges",
-    link: "https://www.shecodes.io/contests/your-coding-journey/contest_entries/satoko-gruson-japanese-6001ffdb-eefb-4f72-8143-b1fb136de885/preview"
-  },
-  
   // OTHERS
   {
     id: "coming-soon-1",
