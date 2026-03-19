@@ -12,10 +12,11 @@ const fireflyProcess = [
 ];
 
 const fireflyPageSections = [
-  { label: "Hero + CTA", detail: "Main messaging targeting SNS creators — culturalised hero with Japanese-language headline and two CTAs: 'Create Now' (direct Firefly app entry) and 'Compare Plans' (anchor link scrolling users directly to the plans section below), allowing users to trial the app or evaluate plans without leaving the page" },
+  { label: "Hero + CTA", detail: "Main messaging targeting SNS creators — culturalised hero with Japanese-language headline and two CTAs: 'Create Now' (direct Firefly app entry) and 'Compare Plans' (anchor link scrolling users directly to the plans section below)" },
   { label: "SNS Video Creation", detail: "Fashion-themed use case: replace clothing colours and patterns using generative AI, generate video from still images, and create high-quality SNS content — all without a reshoot. Targeting creators posting to Instagram, TikTok, and X" },
   { label: "Product Imagery + Storyboard", detail: "Showcased Firefly Board for generating and comparing visual variations in real time. Storyboard feature highlighted as a brainstorming tool — helping creators plan post sequences and video flow before generating final assets" },
   { label: "BGM & Sound Effects", detail: "Demonstrated Firefly's audio generation capabilities: generate scene-matched BGM, add sound effects for atmosphere, and combine audio with video — enabling creators to fully produce SNS content within one tool" },
+  { label: "Plans", detail: "Anchor-linked plans section at the bottom of the page — displaying Firefly Free, Standard, and Pro tiers side by side to allow users to compare and choose a plan without navigating away from the use case page" },
 ];
 
 const fireflyOutcomes = [
