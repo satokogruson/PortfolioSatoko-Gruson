@@ -37,9 +37,9 @@ const genAiProject = {
 };
 
 const adobeContext = [
-  { icon: Globe, label: "Localisation Gap", detail: "Global page templates for Creative Cloud, Creative Cloud Pro, and Firefly were optimised for Western users and underperformed in Japan — requiring targeted culturalisation and localised improvements." },
-  { icon: BarChart2, label: "Creative Cloud Pro & GenAI Comprehension", detail: "Behavioural data revealed significant confusion at the point of purchase around AI credits and Creative Cloud Pro plan differentiation — suppressing conversion on the Plans page and Firefly entry points." },
-  { icon: Users, label: "Cross-functional Complexity", detail: "Every improvement — from Firefly page culturalisation to Creative Cloud Pro A/B tests — required coordination across global dev, CMS, design, analytics, and paid media teams across multiple time zones." },
+  { icon: Globe, label: "Localisation Gap", detail: "Global page templates for Creative Cloud, Creative Cloud Pro, and Firefly were optimised for Western users and underperformed in Japan — requiring targeted culturalisation and localised improvements to ensure Japanese users could identify with the product and understand its value." },
+  { icon: BarChart2, label: "GenAI Credit Comprehension & Plan Differentiation", detail: "Behavioural data revealed significant confusion at the point of purchase around Gen AI credits and Creative Cloud Pro plan differentiation. Japanese users lacked sufficient context to understand what AI credits are, how they work, and why they matter — suppressing conversion on the Plans page and Firefly entry points. Two key initiatives addressed this: an A/B test to improve Gen AI credit comprehension on Creative Cloud plans, and a dedicated Firefly use case page culturalised for Japanese creators." },
+  { icon: Users, label: "Cross-functional Complexity", detail: "Every improvement — from Firefly page culturalisation to Creative Cloud Pro A/B tests — required coordination across dev, CMS, design, analytics, and paid media teams across multiple time zones." },
 ];
 
 const adobeProcess = [
