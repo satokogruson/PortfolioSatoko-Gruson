@@ -87,21 +87,12 @@ export function About() {
               }}
             />
 
-            {/* Profile cards — overlapping composition */}
-            <div className="relative z-10 w-72 sm:w-80 h-[420px] sm:h-[480px]">
-              {/* B&W original — slightly behind and offset left */}
-              <div className="absolute top-8 -left-8 w-52 sm:w-60 rounded-[2rem] overflow-hidden border-4 border-background shadow-xl grayscale">
+            {/* Profile card */}
+            <div className="relative z-10 w-64 sm:w-72">
+              <div className="rounded-[2.5rem] overflow-hidden border-4 border-background shadow-2xl grayscale">
                 <img
                   src={`${import.meta.env.BASE_URL}images/profile-original.png`}
                   alt="Satoko Gruson"
-                  className="w-full h-full object-cover object-top"
-                />
-              </div>
-              {/* Anime — in front and offset right */}
-              <div className="absolute bottom-0 right-0 w-52 sm:w-60 rounded-[2rem] overflow-hidden border-4 border-background shadow-2xl">
-                <img
-                  src={`${import.meta.env.BASE_URL}images/profile-anime.png`}
-                  alt="Satoko Gruson — anime illustration"
                   className="w-full h-full object-cover object-top"
                 />
               </div>
