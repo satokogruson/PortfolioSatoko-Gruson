@@ -1,4 +1,4 @@
-export type ProjectCategory = "UI/UX" | "Frontend" | "Others";
+export type ProjectCategory = "UI/UX" | "Frontend";
 
 export interface Project {
   id: string;
@@ -78,13 +78,4 @@ export const projectsData: Project[] = [
     image: "https://satokogruson.github.io/img/Traveco.png"
   },
 
-  // OTHERS
-  {
-    id: "coming-soon-1",
-    title: "Coming soon",
-    description: "An exciting project is coming soon. Stay tuned!",
-    category: "Others",
-    link: "https://satokogruson.github.io/",
-    image: "https://satokogruson.github.io/img/coming%20soon.jpeg"
-  }
 ];
