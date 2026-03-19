@@ -3,12 +3,10 @@ import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience";
-import { PasswordGate } from "@/components/PasswordGate";
 import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
 
 export default function Home() {
-  // Ensure smooth scroll on initial load if hash is present
   useEffect(() => {
     if (window.location.hash) {
       const id = window.location.hash.substring(1);
@@ -27,13 +25,11 @@ export default function Home() {
       
       <main>
         <Hero />
+        <section id="experience">
+          <Experience />
+        </section>
         <Projects />
         <About />
-        <section id="experience">
-          <PasswordGate>
-            <Experience />
-          </PasswordGate>
-        </section>
       </main>
 
       <Footer />
