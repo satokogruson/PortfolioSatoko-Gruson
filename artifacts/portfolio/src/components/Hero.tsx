@@ -14,6 +14,13 @@ export function Hero() {
         backgroundColor: "hsl(350 60% 92%)",
       }}
     >
+      {/* White wash on the left so black text reads clearly */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background: "linear-gradient(to right, rgba(255,255,255,0.72) 0%, rgba(255,255,255,0.45) 50%, rgba(255,255,255,0.0) 100%)",
+        }}
+      />
       {/* Subtle gradient fade at the bottom to blend into the next section */}
       <div
         className="absolute inset-0 z-0"
