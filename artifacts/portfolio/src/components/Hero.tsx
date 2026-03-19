@@ -73,8 +73,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif leading-[1.1] mb-6"
-            style={{ color: 'hsl(325, 45%, 38%)' }}
+            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-black leading-[1.1] mb-6"
           >
             Satoko <br /> Gruson.
           </motion.h1>
