@@ -61,80 +61,17 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative flex items-center justify-center min-h-[420px]"
+            className="relative"
           >
-            {/* Large rose circle — background anchor */}
-            <div
-              className="absolute rounded-full"
-              style={{
-                width: 340,
-                height: 340,
-                background: "hsl(350 40% 65% / 0.18)",
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-              }}
-            />
-            {/* Dot grid fill */}
-            <div
-              className="absolute rounded-full overflow-hidden"
-              style={{
-                width: 340,
-                height: 340,
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                backgroundImage: "radial-gradient(circle, hsl(350 40% 55% / 0.45) 1.5px, transparent 1.5px)",
-                backgroundSize: "18px 18px",
-              }}
-            />
-            {/* Outer dashed circle ring */}
-            <div
-              className="absolute rounded-full"
-              style={{
-                width: 420,
-                height: 420,
-                top: "50%",
-                left: "50%",
-                transform: "translate(-50%, -50%)",
-                border: "1.5px dashed hsl(350 40% 65% / 0.4)",
-              }}
-            />
-            {/* Small decorative accent circles */}
-            <div
-              className="absolute w-5 h-5 rounded-full"
-              style={{ background: "hsl(350 40% 65% / 0.7)", top: "12%", left: "62%" }}
-            />
-            <div
-              className="absolute w-3 h-3 rounded-full border-2"
-              style={{ borderColor: "hsl(350 40% 65% / 0.6)", bottom: "18%", right: "12%" }}
-            />
-            <div
-              className="absolute w-2 h-2 rounded-full"
-              style={{ background: "hsl(350 40% 65% / 0.5)", top: "35%", left: "10%" }}
-            />
-            {/* Short horizontal lines */}
-            <div
-              className="absolute h-[2px] w-10 rounded-full"
-              style={{ background: "hsl(350 40% 65% / 0.4)", bottom: "28%", left: "8%" }}
-            />
-            <div
-              className="absolute h-[2px] w-6 rounded-full"
-              style={{ background: "hsl(350 40% 65% / 0.3)", top: "20%", right: "10%" }}
-            />
-
-            {/* Photo — smaller, inset, secondary */}
-            <div
-              className="relative z-10 rounded-[1.5rem] overflow-hidden shadow-lg"
-              style={{ width: 200, height: 240 }}
-            >
+            <div className="aspect-square rounded-[2.5rem] overflow-hidden bg-card border-8 border-background shadow-2xl relative z-10 p-8 flex items-center justify-center">
               <img
-                src={`${import.meta.env.BASE_URL}images/profile-original.png`}
-                alt="Satoko Gruson"
-                className="w-full h-full object-cover object-top"
-                style={{ filter: "sepia(0.3) saturate(1.1) hue-rotate(318deg) brightness(1.02)" }}
+                src={`${import.meta.env.BASE_URL}images/about-illustration.png`}
+                alt="Creative abstract illustration"
+                className="w-full h-full object-contain drop-shadow-sm"
               />
             </div>
+            {/* Decorative background block */}
+            <div className="absolute top-8 -right-8 w-full h-full bg-primary/10 rounded-[2.5rem] -z-10" />
           </motion.div>
 
         </div>
