@@ -61,15 +61,48 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative"
+            className="relative flex justify-center"
           >
-            <div className="aspect-square rounded-[2.5rem] overflow-hidden bg-card border-8 border-background shadow-2xl relative z-10 p-8 flex items-center justify-center">
-              <img 
-                src={`${import.meta.env.BASE_URL}images/about-illustration.png`} 
-                alt="Creative abstract illustration" 
-                className="w-full h-full object-contain drop-shadow-sm"
-              />
+            {/* Dot grid accent */}
+            <div
+              className="absolute inset-0 rounded-[2.5rem] opacity-20 pointer-events-none"
+              style={{
+                backgroundImage: "radial-gradient(circle, hsl(350 40% 65% / 0.6) 1px, transparent 1px)",
+                backgroundSize: "22px 22px",
+              }}
+            />
+            {/* Orb glow behind image */}
+            <div
+              className="absolute -bottom-10 -left-10 w-72 h-72 rounded-full pointer-events-none"
+              style={{
+                background: "radial-gradient(circle, hsl(350 60% 80% / 0.4) 0%, transparent 70%)",
+                filter: "blur(40px)",
+              }}
+            />
+            <div
+              className="absolute -top-10 -right-10 w-56 h-56 rounded-full pointer-events-none"
+              style={{
+                background: "radial-gradient(circle, hsl(20 60% 85% / 0.35) 0%, transparent 70%)",
+                filter: "blur(35px)",
+              }}
+            />
+
+            {/* Profile card */}
+            <div className="relative z-10 w-72 sm:w-80">
+              <div className="rounded-[2.5rem] overflow-hidden border-4 border-background shadow-2xl">
+                <img
+                  src={`${import.meta.env.BASE_URL}images/profile-anime.png`}
+                  alt="Satoko Gruson — anime illustration"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+              {/* Floating name badge */}
+              <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 whitespace-nowrap bg-background border border-border rounded-full px-5 py-2 shadow-lg flex items-center gap-2">
+                <span className="w-2 h-2 rounded-full bg-green-400 inline-block animate-pulse" />
+                <span className="text-sm font-medium text-foreground">Available for work</span>
+              </div>
             </div>
+
             {/* Decorative background block */}
             <div className="absolute top-8 -right-8 w-full h-full bg-primary/10 rounded-[2.5rem] -z-10" />
           </motion.div>
