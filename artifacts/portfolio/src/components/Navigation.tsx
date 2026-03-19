@@ -55,7 +55,7 @@ export function Navigation() {
             </a>
           ))}
           <a
-            href="mailto:contact@example.com"
+            href="mailto:fsjm1210@gmail.com"
             className="px-5 py-2.5 rounded-full text-sm font-medium bg-foreground text-background hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
           >
             Let's Talk
@@ -92,7 +92,7 @@ export function Navigation() {
               </a>
             ))}
             <a
-              href="mailto:contact@example.com"
+              href="mailto:fsjm1210@gmail.com"
               className="mt-4 px-6 py-3 rounded-full text-center font-medium bg-primary text-primary-foreground"
             >
               Let's Talk
