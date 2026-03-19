@@ -238,7 +238,10 @@ export function Experience() {
                     </span>
                     <h5 className="text-lg font-semibold text-foreground">Firefly Japan — Use Case Page</h5>
                   </div>
-                  <p className="text-xs text-muted-foreground mb-6 font-mono uppercase tracking-widest">Web PM · Adobe Analytics · Contentsquare</p>
+                  <p className="text-xs text-muted-foreground mb-3 font-mono uppercase tracking-widest">Web PM · Adobe Analytics · Contentsquare</p>
+                  <p className="text-sm text-foreground/70 leading-relaxed mb-6">
+                    This page does not exist in any other market. It was built exclusively for Japan as a direct response to an engagement gap identified on the global Firefly website — a Japan-specific solution to a Japan-specific problem.
+                  </p>
 
                   {/* Problem + Goal */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
