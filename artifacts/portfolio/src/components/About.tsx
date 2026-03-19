@@ -9,7 +9,7 @@ export function About() {
       <div className="absolute bottom-0 left-0 -ml-32 -mb-32 w-96 h-96 bg-accent/20 rounded-full blur-3xl" />
 
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-stretch">
           
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -61,60 +61,24 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative flex justify-center"
+            className="relative hidden lg:block -mr-12 -my-24"
           >
-            {/* Dot grid accent */}
+            {/* Left edge fade so photo blends into the section */}
             <div
-              className="absolute inset-0 rounded-[2.5rem] opacity-20 pointer-events-none"
-              style={{
-                backgroundImage: "radial-gradient(circle, hsl(350 40% 65% / 0.6) 1px, transparent 1px)",
-                backgroundSize: "22px 22px",
-              }}
+              className="absolute inset-y-0 left-0 w-24 z-10 pointer-events-none"
+              style={{ background: "linear-gradient(to right, hsl(var(--secondary) / 0.3), transparent)" }}
             />
-            {/* Orb glow behind image */}
+            {/* Bottom fade */}
             <div
-              className="absolute -bottom-10 -left-10 w-72 h-72 rounded-full pointer-events-none"
-              style={{
-                background: "radial-gradient(circle, hsl(350 60% 80% / 0.4) 0%, transparent 70%)",
-                filter: "blur(40px)",
-              }}
+              className="absolute inset-x-0 bottom-0 h-32 z-10 pointer-events-none"
+              style={{ background: "linear-gradient(to top, hsl(var(--secondary) / 0.3), transparent)" }}
             />
-            <div
-              className="absolute -top-10 -right-10 w-56 h-56 rounded-full pointer-events-none"
-              style={{
-                background: "radial-gradient(circle, hsl(20 60% 85% / 0.35) 0%, transparent 70%)",
-                filter: "blur(35px)",
-              }}
+            <img
+              src={`${import.meta.env.BASE_URL}images/profile-original.png`}
+              alt="Satoko Gruson"
+              className="w-full h-full object-cover object-top rounded-l-[3rem]"
+              style={{ filter: "sepia(0.3) saturate(1.1) hue-rotate(318deg) brightness(1.02)" }}
             />
-
-            {/* Circle photo with rings */}
-            <div className="relative z-10 flex items-center justify-center w-72 h-72 sm:w-80 sm:h-80">
-              {/* Outer dashed ring */}
-              <div
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{
-                  border: "1.5px dashed hsl(350 40% 65% / 0.5)",
-                  transform: "scale(1.18)",
-                }}
-              />
-              {/* Solid rose ring */}
-              <div
-                className="absolute inset-0 rounded-full pointer-events-none"
-                style={{
-                  border: "3px solid hsl(350 40% 65% / 0.7)",
-                  transform: "scale(1.08)",
-                }}
-              />
-              {/* Photo */}
-              <div className="w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-background">
-                <img
-                  src={`${import.meta.env.BASE_URL}images/profile-original.png`}
-                  alt="Satoko Gruson"
-                  className="w-full h-full object-cover object-top scale-110"
-                  style={{ filter: "sepia(0.3) saturate(1.1) hue-rotate(318deg) brightness(1.02)" }}
-                />
-              </div>
-            </div>
           </motion.div>
 
         </div>
