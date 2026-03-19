@@ -60,6 +60,13 @@ const crossFunctional = [
   { label: "Stakeholder Mgmt", detail: "Maintain trusted relationships with US HQ, Japan marketing team, and regional agency partners" },
 ];
 
+const localHappinezDesignDecisions = [
+  { label: "Authentication Flow", detail: "Designed sign-up and login screens with a clear, low-friction UX — balancing simplicity with the validation requirements of a multi-country platform." },
+  { label: "Submission Flow", detail: "Built a multi-step form UX allowing local initiative leaders to register projects — progressive disclosure kept the process approachable despite the volume of required information." },
+  { label: "Settings Area", detail: "Designed a structured settings dashboard covering profile management, notification preferences, and account controls — consistent with the broader platform visual language." },
+  { label: "Accessible & Inclusive Design", detail: "Colour choices, contrast ratios, and component sizing were guided by accessibility best practices — reflecting the platform's inclusive, community-first mission." },
+];
+
 const medicusDesignDecisions = [
   { label: "Visual Identity", detail: "Deep forest green with gold accents — conveying clinical trust, premium positioning, and warmth." },
   { label: "Navigation Architecture", detail: "Separated patient and HCP journeys at top-level nav — preventing audience confusion while serving both conversion goals." },
@@ -115,7 +122,7 @@ export function Experience() {
 
             {/* Top bar */}
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 01 / 02</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 01 / 03</span>
               <a href="https://www.adobe.com/jp/" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-sm text-background/70 hover:text-background transition-colors">
                 adobe.com/jp <ArrowUpRight size={14} />
@@ -516,7 +523,7 @@ export function Experience() {
           </div>
         </motion.div>
 
-        {/* ── Case Study 02: Medicus Practice ───────────────────────── */}
+        {/* ── Case Study 02: Local Happinez ─────────────────────────── */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -526,7 +533,118 @@ export function Experience() {
           <div className="rounded-2xl border border-border bg-card overflow-hidden">
 
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 02 / 02</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 02 / 03</span>
+              <span className="text-sm text-background/70">Freelance · Netherlands</span>
+            </div>
+
+            <div className="p-8 md:p-12">
+
+              {/* Title + meta */}
+              <div className="flex flex-wrap items-start justify-between gap-6 mb-10">
+                <div>
+                  <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-2">Local Happinez</h3>
+                  <p className="text-lg text-muted-foreground">UI Design — Authentication, Submission & Settings</p>
+                </div>
+                <div className="grid grid-cols-2 gap-x-10 gap-y-3 text-sm">
+                  {[
+                    ["Role", "UI Designer (Freelance)"],
+                    ["Type", "Non-profit · Steward-owned"],
+                    ["Scope", "Auth flow · Submission flow · Settings area"],
+                    ["Tools", "Figma"],
+                  ].map(([label, value]) => (
+                    <div key={label}>
+                      <span className="text-xs uppercase tracking-wider text-muted-foreground block mb-1">{label}</span>
+                      <span className="text-foreground/90 font-medium">{value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* About the org */}
+              <div className="mb-10">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />About the Organisation
+                </h4>
+                <p className="text-foreground/80 leading-relaxed mb-5 text-sm">
+                  Local Happinez is a Dutch steward-owned non-profit with a bold mission: by 2028, connect one million people with local sustainable initiatives worldwide. The platform enables communities across multiple countries — including Nepal, Sri Lanka, the Philippines, and South America — to discover, join, and register grassroots projects that improve nature and society. At its core, the organisation is "owned by the world" — all voting shares donated to a foundation, all economic value returned to planet and people.
+                </p>
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                  {[
+                    { label: "Multi-country Platform", detail: "The product serves users and initiative leaders across diverse countries and contexts — requiring clear, universally understandable UI patterns." },
+                    { label: "Community-first Mission", detail: "Every design decision needed to reflect openness and accessibility, in line with the org's inclusive, grassroots ethos." },
+                    { label: "Product at an Early Stage", detail: "The platform was being built from the ground up — UI decisions at this stage directly shape the long-term product experience." },
+                  ].map(({ label, detail }) => (
+                    <div key={label} className="rounded-xl bg-secondary/50 p-5 border border-border">
+                      <h5 className="font-medium text-foreground mb-2 text-sm">{label}</h5>
+                      <p className="text-sm text-muted-foreground leading-relaxed">{detail}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Key design decisions */}
+              <div className="mb-10">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Key Design Areas
+                </h4>
+                <div className="space-y-3">
+                  {localHappinezDesignDecisions.map(({ label, detail }) => (
+                    <div key={label} className="flex gap-4 p-4 rounded-lg border border-border">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
+                      <div>
+                        <span className="font-semibold text-foreground text-sm">{label} — </span>
+                        <span className="text-sm text-foreground/70">{detail}</span>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Figma embed */}
+              <div className="mb-10">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-6 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Figma Design File
+                </h4>
+                <div className="rounded-xl overflow-hidden border border-border bg-secondary/20">
+                  <iframe
+                    title="Local Happinez — Figma Design"
+                    style={{ border: "none" }}
+                    width="100%"
+                    height="720"
+                    src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fdesign%2FOkN70hkBXVf12RtmywLZ1s%2FLocal-Happinez%3Fnode-id%3D0-1%26t%3D2XIgZc26JBQGO76j-1"
+                    allowFullScreen
+                  />
+                </div>
+              </div>
+
+              {/* Outcome */}
+              <div className="rounded-xl bg-secondary/30 border-l-4 border-primary p-6 md:p-8">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-3 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Outcome & Reflection
+                </h4>
+                <p className="text-foreground/80 leading-relaxed text-sm">
+                  Designed the UI for three core product areas — authentication, submission, and settings — for a platform aiming to connect a million people to local sustainable action. Working with a non-profit in an early product stage meant every design decision carried weight: the UI needed to feel approachable and trustworthy for community members around the world, while being flexible enough to scale across cultures and languages.
+                </p>
+                <p className="text-foreground/80 leading-relaxed text-sm mt-3">
+                  Key learning: designing for mission-driven products requires a deep understanding of the community context. Accessibility and clarity aren't add-ons — they are fundamental to the product's ability to achieve its goals.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </motion.div>
+
+        {/* ── Case Study 03: Medicus Practice ───────────────────────── */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="rounded-2xl border border-border bg-card overflow-hidden">
+
+            <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 03 / 03</span>
               <span className="text-sm text-background/70">Freelance · Austria</span>
             </div>
 
