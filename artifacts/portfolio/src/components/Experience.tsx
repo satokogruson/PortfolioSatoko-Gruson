@@ -204,9 +204,19 @@ export function Experience() {
                     ))}
                   </ul>
 
-                  {/* Image placeholder — GenAI */}
-                  <div className="rounded-lg border-2 border-dashed border-border bg-secondary/20 p-6 text-center mb-5">
-                    <p className="text-xs text-muted-foreground">Screenshots coming soon — GenAI comparison chart & use cases section</p>
+                  {/* GenAI screenshot — CC plans page */}
+                  <div className="rounded-xl overflow-hidden border border-border mb-5">
+                    <div className="bg-secondary/40 px-4 py-2 border-b border-border flex items-center gap-2">
+                      <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                      <span className="text-xs text-muted-foreground ml-2 font-mono">adobe.com/jp/creativecloud — Plans page (GenAI comparison)</span>
+                    </div>
+                    <img
+                      src="/images/firefly/cc-plans-genai.png"
+                      alt="Adobe Creative Cloud plans page Japan — GenAI credit comparison section"
+                      className="w-full h-auto block"
+                    />
                   </div>
 
                   <div className="rounded-lg bg-primary/8 border border-primary/20 px-5 py-3 text-sm text-foreground/80">
@@ -295,9 +305,44 @@ export function Experience() {
                     </div>
                   </div>
 
-                  {/* Image placeholder — Firefly */}
-                  <div className="rounded-lg border-2 border-dashed border-border bg-secondary/20 p-6 text-center mb-6">
-                    <p className="text-xs text-muted-foreground">Screenshots coming soon — Firefly Japan use case page sections</p>
+                  {/* Firefly screenshots */}
+                  <div className="space-y-4 mb-6">
+                    {/* Use case page — scrollable full-page preview */}
+                    <div className="rounded-xl overflow-hidden border border-border">
+                      <div className="bg-secondary/40 px-4 py-2 border-b border-border flex items-center gap-2">
+                        <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                        <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                        <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                        <span className="text-xs text-muted-foreground ml-2 font-mono">adobe.com/jp/products/firefly — Use case page (delivered)</span>
+                      </div>
+                      <div className="overflow-y-auto" style={{ maxHeight: "520px" }}>
+                        <img
+                          src="/images/firefly/use-case-page.png"
+                          alt="Firefly Japan use case page — culturalised full-page view"
+                          className="w-full h-auto block"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Feature pages — 3-up row */}
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground font-mono pt-2">Related Firefly Japan Feature Pages</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                      {[
+                        { src: "/images/firefly/text-to-image.png", label: "Text-to-Image page", url: "adobe.com/jp/products/firefly/features/text-to-image" },
+                        { src: "/images/firefly/ai-video.png", label: "AI Video Generator page", url: "adobe.com/jp/products/firefly/features/ai-video-generator" },
+                        { src: "/images/firefly/features-prompts.png", label: "Features & Prompt Tips page", url: "adobe.com/jp/products/firefly" },
+                      ].map(({ src, label, url }) => (
+                        <div key={label} className="rounded-lg overflow-hidden border border-border">
+                          <div className="bg-secondary/40 px-3 py-1.5 border-b border-border">
+                            <span className="text-[10px] text-muted-foreground font-mono truncate block">{url}</span>
+                          </div>
+                          <img src={src} alt={label} className="w-full h-auto block" />
+                          <div className="px-3 py-2 bg-secondary/20">
+                            <span className="text-xs text-foreground/70">{label}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
                   </div>
 
                   {/* Outcomes */}
