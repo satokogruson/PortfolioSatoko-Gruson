@@ -16,7 +16,7 @@ const fireflyPageSections = [
   { label: "SNS Video Creation", detail: "Use case: creating videos for social media — storyboard → generate → post" },
   { label: "Product Imagery", detail: "Use case: generating product imagery for e-commerce and campaigns" },
   { label: "BGM & Sound Effects", detail: "Use case: adding background music and sound effects to video content" },
-  { label: "Plans & CTA", detail: "Pricing plans and CTA — localised tier names and pricing in JPY" },
+  { label: "Hero CTA", detail: "Strategically placed a prominent CTA in the hero section to drive direct app entry — enabling Japanese users to try Firefly immediately without navigating to a plans page" },
 ];
 
 const fireflyOutcomes = [
