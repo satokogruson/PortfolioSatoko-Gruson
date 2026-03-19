@@ -13,7 +13,7 @@ export function Hero() {
         <img
           src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
           alt="Abstract elegant background"
-          className="w-full h-full object-cover object-center opacity-10"
+          className="w-full h-full object-cover object-center opacity-25"
         />
         <div
           className="absolute inset-0"
