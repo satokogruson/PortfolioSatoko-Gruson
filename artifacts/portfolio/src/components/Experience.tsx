@@ -37,9 +37,9 @@ const genAiProject = {
 };
 
 const adobeContext = [
-  { icon: Globe, label: "Localisation Gap", detail: "Global page templates optimised for Western users underperformed in Japan — requiring targeted, localised improvements." },
-  { icon: BarChart2, label: "GenAI Comprehension", detail: "Behavioural data revealed significant confusion at point of purchase around AI credits — suppressing conversion on the plans page." },
-  { icon: Users, label: "Cross-functional Complexity", detail: "Every improvement required coordination across global dev, CMS, design, analytics, and paid media teams across multiple time zones." },
+  { icon: Globe, label: "Localisation Gap", detail: "Global page templates for Creative Cloud, Creative Cloud Pro, and Firefly were optimised for Western users and underperformed in Japan — requiring targeted culturalisation and localised improvements." },
+  { icon: BarChart2, label: "Creative Cloud Pro & GenAI Comprehension", detail: "Behavioural data revealed significant confusion at the point of purchase around AI credits and Creative Cloud Pro plan differentiation — suppressing conversion on the Plans page and Firefly entry points." },
+  { icon: Users, label: "Cross-functional Complexity", detail: "Every improvement — from Firefly page culturalisation to Creative Cloud Pro A/B tests — required coordination across global dev, CMS, design, analytics, and paid media teams across multiple time zones." },
 ];
 
 const adobeProcess = [
@@ -132,7 +132,7 @@ export function Experience() {
                   {[
                     ["Role", "Web Product Manager (Contract)"],
                     ["Period", "January 2025 – Present"],
-                    ["Scope", "Homepage · Catalogue · Plans page · Campaign pages"],
+                    ["Scope", "Homepage · Catalogue · Plans page · Firefly page · Creative Cloud Pro · Campaign pages"],
                     ["Tools", "Adobe Analytics · Contentsquare · Figma · CMS · A/B testing"],
                   ].map(([label, value]) => (
                     <div key={label}>
@@ -149,7 +149,7 @@ export function Experience() {
                   <span className="w-4 h-[1px] bg-muted-foreground" />Business Context & Challenge
                 </h4>
                 <p className="text-foreground/80 leading-relaxed mb-6 text-sm">
-                  Adobe Japan's website is the primary conversion channel for Creative Cloud subscriptions in Japan — a market with distinct user behaviours, reading patterns, and purchasing decision processes compared to Western audiences. My role covers end-to-end web ownership: from identifying UX friction through data analysis, to designing experiments, coordinating global delivery, and reporting business impact.
+                  Adobe Japan's website is the primary conversion channel for Creative Cloud and Creative Cloud Pro subscriptions in Japan — a market with distinct user behaviours, reading patterns, and purchasing decision processes compared to Western audiences. My scope spans high-traffic acquisition pages including the Plans page, Firefly, catalogue, homepage, and campaign pages. My role covers end-to-end web ownership: from identifying UX friction through data analysis, to designing experiments and culturalised page experiences, coordinating global delivery, and reporting business impact.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                   {adobeContext.map(({ icon: Icon, label, detail }) => (
