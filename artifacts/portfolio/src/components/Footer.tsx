@@ -28,7 +28,7 @@ export function Footer() {
               <Github size={20} />
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/satokogruson/" 
               target="_blank" 
               rel="noopener noreferrer"
               className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
@@ -37,7 +37,7 @@ export function Footer() {
               <Linkedin size={20} />
             </a>
             <a 
-              href="mailto:contact@example.com" 
+              href="mailto:fsjm1210@gmail.com" 
               className="w-12 h-12 rounded-full bg-background/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors duration-300"
               aria-label="Email"
             >
