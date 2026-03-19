@@ -227,8 +227,8 @@ export function Experience() {
                 </div>
               </div>
 
-              {/* ── Project B: Firefly Japan Culturalisation ── */}
-              <div className="mb-10">
+              {/* ── Project B: Firefly Use Case Page ── */}
+              <div className="mb-8">
                 <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
                   <span className="w-4 h-[1px] bg-muted-foreground" />Project B
                 </h4>
@@ -237,7 +237,7 @@ export function Experience() {
                     <span className="text-xs font-medium px-3 py-1 rounded-full uppercase tracking-wide bg-secondary text-foreground/70">
                       Culturalisation · UX Content Strategy
                     </span>
-                    <h5 className="text-lg font-semibold text-foreground">Adobe Firefly Japan — Use Case Page Culturalisation</h5>
+                    <h5 className="text-lg font-semibold text-foreground">Firefly Japan — Use Case Page</h5>
                   </div>
                   <p className="text-xs text-muted-foreground mb-6 font-mono uppercase tracking-widest">Web PM · Adobe Analytics · Contentsquare</p>
 
@@ -267,7 +267,7 @@ export function Experience() {
                     </div>
                   </div>
 
-                  {/* Key insight callout */}
+                  {/* Key insight */}
                   <div className="rounded-lg border-l-4 border-primary bg-primary/5 px-5 py-4 mb-6">
                     <p className="text-xs font-mono uppercase tracking-widest text-primary mb-1">Key Insight</p>
                     <p className="text-sm text-foreground/80 italic leading-relaxed">
@@ -305,43 +305,20 @@ export function Experience() {
                     </div>
                   </div>
 
-                  {/* Firefly screenshots */}
-                  <div className="space-y-4 mb-6">
-                    {/* Use case page — scrollable full-page preview */}
-                    <div className="rounded-xl overflow-hidden border border-border">
-                      <div className="bg-secondary/40 px-4 py-2 border-b border-border flex items-center gap-2">
-                        <span className="w-2.5 h-2.5 rounded-full bg-border" />
-                        <span className="w-2.5 h-2.5 rounded-full bg-border" />
-                        <span className="w-2.5 h-2.5 rounded-full bg-border" />
-                        <span className="text-xs text-muted-foreground ml-2 font-mono">adobe.com/jp/products/firefly — Use case page (delivered)</span>
-                      </div>
-                      <div className="overflow-y-auto" style={{ maxHeight: "520px" }}>
-                        <img
-                          src="/images/firefly/use-case-page.png"
-                          alt="Firefly Japan use case page — culturalised full-page view"
-                          className="w-full h-auto block"
-                        />
-                      </div>
+                  {/* Screenshot */}
+                  <div className="rounded-xl overflow-hidden border border-border mb-6">
+                    <div className="bg-secondary/40 px-4 py-2 border-b border-border flex items-center gap-2">
+                      <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                      <span className="text-xs text-muted-foreground ml-2 font-mono">adobe.com/jp/products/firefly — Use case page (delivered)</span>
                     </div>
-
-                    {/* Feature pages — 3-up row */}
-                    <p className="text-xs uppercase tracking-widest text-muted-foreground font-mono pt-2">Related Firefly Japan Feature Pages</p>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                      {[
-                        { src: "/images/firefly/text-to-image.png", label: "Text-to-Image page", url: "adobe.com/jp/products/firefly/features/text-to-image" },
-                        { src: "/images/firefly/ai-video.png", label: "AI Video Generator page", url: "adobe.com/jp/products/firefly/features/ai-video-generator" },
-                        { src: "/images/firefly/features-prompts.png", label: "Features & Prompt Tips page", url: "adobe.com/jp/products/firefly" },
-                      ].map(({ src, label, url }) => (
-                        <div key={label} className="rounded-lg overflow-hidden border border-border">
-                          <div className="bg-secondary/40 px-3 py-1.5 border-b border-border">
-                            <span className="text-[10px] text-muted-foreground font-mono truncate block">{url}</span>
-                          </div>
-                          <img src={src} alt={label} className="w-full h-auto block" />
-                          <div className="px-3 py-2 bg-secondary/20">
-                            <span className="text-xs text-foreground/70">{label}</span>
-                          </div>
-                        </div>
-                      ))}
+                    <div className="overflow-y-auto" style={{ maxHeight: "520px" }}>
+                      <img
+                        src="/images/firefly/use-case-page.png"
+                        alt="Firefly Japan use case page — culturalised full-page view"
+                        className="w-full h-auto block"
+                      />
                     </div>
                   </div>
 
@@ -366,6 +343,138 @@ export function Experience() {
                     <p className="text-sm text-foreground/80 leading-relaxed">
                       Effective culturalisation requires understanding who the user is, what they aspire to create, and how they see themselves — then building an experience that reflects that identity back to them. This project demonstrated that audience-first content strategy, paired with intentional creative direction, can meaningfully close the gap between a global product and a local user.
                     </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* ── Project C: Firefly Feature Pages Culturalisation ── */}
+              <div className="mb-8">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Project C
+                </h4>
+                <div className="rounded-xl border border-border p-6 md:p-8">
+                  <div className="flex flex-wrap items-center gap-3 mb-2">
+                    <span className="text-xs font-medium px-3 py-1 rounded-full uppercase tracking-wide bg-secondary text-foreground/70">
+                      Culturalisation · Feature Pages
+                    </span>
+                    <h5 className="text-lg font-semibold text-foreground">Firefly Japan — Feature Pages Culturalisation</h5>
+                  </div>
+                  <p className="text-xs text-muted-foreground mb-6 font-mono uppercase tracking-widest">Web PM · CMS · Creative Agency</p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div className="rounded-lg bg-secondary/40 border border-border p-5">
+                      <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-2">The Problem</p>
+                      <p className="text-sm text-foreground/80 leading-relaxed">
+                        The Firefly Text-to-Image and AI Video Generator feature pages were directly adapted from global templates — hero imagery, prompt examples, and generated outputs all reflected Western aesthetics and scenarios irrelevant to Japanese creators.
+                      </p>
+                    </div>
+                    <div className="rounded-lg bg-primary/5 border border-primary/20 p-5">
+                      <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-2">My Contributions</p>
+                      <ul className="space-y-1.5">
+                        {[
+                          "Replaced hero image galleries with Japan-relevant content: anime-style illustrations, Japanese urban scenes, cherry blossoms",
+                          "Worked with the content vendor to produce Japanese-language prompt examples and locally relevant generated outputs",
+                          "Expanded and optimised related feature card sections — improving cross-linking between Firefly capabilities with culturalised imagery",
+                        ].map((item) => (
+                          <li key={item} className="flex items-start gap-2 text-sm text-foreground/80">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Screenshots — 2-up */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
+                    {[
+                      { src: "/images/firefly/text-to-image.png", label: "Text-to-Image page", url: "adobe.com/jp/products/firefly/features/text-to-image" },
+                      { src: "/images/firefly/ai-video.png", label: "AI Video Generator page", url: "adobe.com/jp/products/firefly/features/ai-video-generator" },
+                    ].map(({ src, label, url }) => (
+                      <div key={label} className="rounded-xl overflow-hidden border border-border">
+                        <div className="bg-secondary/40 px-3 py-2 border-b border-border flex items-center gap-2">
+                          <span className="w-2 h-2 rounded-full bg-border" />
+                          <span className="w-2 h-2 rounded-full bg-border" />
+                          <span className="w-2 h-2 rounded-full bg-border" />
+                          <span className="text-[10px] text-muted-foreground ml-1 font-mono truncate">{url}</span>
+                        </div>
+                        <div className="overflow-y-auto" style={{ maxHeight: "400px" }}>
+                          <img src={src} alt={label} className="w-full h-auto block" />
+                        </div>
+                        <div className="px-3 py-2 bg-secondary/20 border-t border-border">
+                          <span className="text-xs text-foreground/70">{label}</span>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <div className="rounded-lg bg-primary/8 border border-primary/20 px-5 py-3 text-sm text-foreground/80">
+                    <span className="font-semibold text-primary mr-2">Result</span>
+                    Increased generation engagement and app referral clicks across Firefly Japan feature pages post-culturalisation.
+                    <span className="ml-2 text-xs text-muted-foreground italic">Specific metrics omitted in accordance with confidentiality obligations.</span>
+                  </div>
+                </div>
+              </div>
+
+              {/* ── Project D: Features & Prompt Suggestion Page ── */}
+              <div className="mb-10">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Project D
+                </h4>
+                <div className="rounded-xl border border-border p-6 md:p-8">
+                  <div className="flex flex-wrap items-center gap-3 mb-2">
+                    <span className="text-xs font-medium px-3 py-1 rounded-full uppercase tracking-wide bg-secondary text-foreground/70">
+                      Culturalisation · Content Strategy
+                    </span>
+                    <h5 className="text-lg font-semibold text-foreground">Firefly Japan — Features & Prompt Suggestion Page</h5>
+                  </div>
+                  <p className="text-xs text-muted-foreground mb-6 font-mono uppercase tracking-widest">Web PM · CMS · Creative Agency</p>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div className="rounded-lg bg-secondary/40 border border-border p-5">
+                      <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-2">The Problem</p>
+                      <p className="text-sm text-foreground/80 leading-relaxed">
+                        The Firefly features overview and prompt inspiration page used global imagery and prompt examples that did not reflect Japanese creative sensibilities — limiting its usefulness as a discovery and inspiration tool for local users.
+                      </p>
+                    </div>
+                    <div className="rounded-lg bg-primary/5 border border-primary/20 p-5">
+                      <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-2">My Contributions</p>
+                      <ul className="space-y-1.5">
+                        {[
+                          "Curated and directed Japan-specific prompt examples across text-to-image, video, and sound generation capabilities",
+                          "Replaced feature card imagery with culturalised outputs — anime, Japanese nature scenes, and e-commerce product imagery",
+                          "Structured the prompt tips section to reflect creative scenarios relevant to Japanese SNS and commercial creators",
+                        ].map((item) => (
+                          <li key={item} className="flex items-start gap-2 text-sm text-foreground/80">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+
+                  {/* Screenshot */}
+                  <div className="rounded-xl overflow-hidden border border-border mb-5">
+                    <div className="bg-secondary/40 px-4 py-2 border-b border-border flex items-center gap-2">
+                      <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                      <span className="w-2.5 h-2.5 rounded-full bg-border" />
+                      <span className="text-xs text-muted-foreground ml-2 font-mono">adobe.com/jp/products/firefly — Features & prompt suggestion page</span>
+                    </div>
+                    <div className="overflow-y-auto" style={{ maxHeight: "520px" }}>
+                      <img
+                        src="/images/firefly/features-prompts.png"
+                        alt="Firefly Japan features and prompt suggestion page"
+                        className="w-full h-auto block"
+                      />
+                    </div>
+                  </div>
+
+                  <div className="rounded-lg bg-primary/8 border border-primary/20 px-5 py-3 text-sm text-foreground/80">
+                    <span className="font-semibold text-primary mr-2">Result</span>
+                    Improved feature discoverability and prompt inspiration relevance for Japanese users — supporting increased engagement with Firefly's generation tools.
+                    <span className="ml-2 text-xs text-muted-foreground italic">Specific metrics omitted in accordance with confidentiality obligations.</span>
                   </div>
                 </div>
               </div>
