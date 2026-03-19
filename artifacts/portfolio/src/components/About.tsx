@@ -63,11 +63,12 @@ export function About() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="relative"
           >
-            <div className="aspect-square rounded-[2.5rem] overflow-hidden bg-card border-8 border-background shadow-2xl relative z-10">
+            <div className="aspect-square rounded-[2.5rem] overflow-hidden bg-[hsl(350_20%_93%)] border-8 border-background shadow-2xl relative z-10">
               <img
-                src={`${import.meta.env.BASE_URL}images/profile-illustration.png`}
-                alt="Satoko Gruson — illustration"
-                className="w-full h-full object-cover object-top"
+                src={`${import.meta.env.BASE_URL}images/profile-original.png`}
+                alt="Satoko Gruson"
+                className="w-full h-full object-contain object-bottom"
+                style={{ filter: "sepia(0.3) saturate(1.1) hue-rotate(318deg) brightness(1.02)" }}
               />
             </div>
             {/* Decorative background block */}
