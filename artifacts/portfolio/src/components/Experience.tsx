@@ -15,7 +15,7 @@ const fireflyPageSections = [
   { label: "Hero section", detail: "Culturalised hero with Japanese model and Japanese-language headline targeting SNS creators" },
   { label: "SNS Video Creation", detail: "Use case: creating videos for social media — storyboard → generate → post" },
   { label: "Product Imagery", detail: "Use case: generating product imagery for e-commerce and campaigns" },
-  { label: "BGM & Sound Effects", detail: "Use case: adding background music and sound effects to video content" },
+  { label: "UI & Use Case Examples", detail: "Showcased Firefly's UI through culturalised use case examples relevant to Japanese creators — illustrating how the tool fits into real creative workflows" },
   { label: "Hero CTA", detail: "Strategically placed a prominent CTA in the hero section to drive direct app entry — enabling Japanese users to try Firefly immediately without navigating to a plans page" },
 ];
 
