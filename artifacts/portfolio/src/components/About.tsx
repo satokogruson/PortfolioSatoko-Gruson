@@ -67,7 +67,7 @@ export function About() {
               <img
                 src={`${import.meta.env.BASE_URL}images/profile-original.png`}
                 alt="Satoko Gruson"
-                className="w-full h-full object-contain object-bottom"
+                className="w-full h-full object-cover object-top"
                 style={{ filter: "sepia(0.3) saturate(1.1) hue-rotate(318deg) brightness(1.02)" }}
               />
             </div>
