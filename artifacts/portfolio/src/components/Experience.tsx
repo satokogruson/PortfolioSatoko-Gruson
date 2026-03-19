@@ -12,10 +12,10 @@ const fireflyProcess = [
 ];
 
 const fireflyPageSections = [
-  { label: "Hero + App CTA", detail: "Main messaging section — culturalised hero with Japanese-language headline targeting SNS creators, with a prominent CTA driving direct Firefly app entry from the very first touchpoint" },
-  { label: "Food Use Case", detail: "Use case example built around food content creation — one of the most popular prompt themes among Japanese SNS creators according to survey data. Showcased how Firefly generates visuals creators can immediately post on Instagram or TikTok" },
-  { label: "Fashion Use Case", detail: "Use case example built around fashion content — another top prompt category from survey findings. Demonstrated how creators can generate on-trend, shareable visuals without professional equipment or photography" },
-  { label: "Storyboard Feature", detail: "Highlighted Firefly's Storyboard feature as a brainstorming tool — helping SNS creators plan and visualise post sequences and creative concepts before generating final assets" },
+  { label: "Hero + CTA", detail: "Main messaging targeting SNS creators — culturalised hero with Japanese-language headline and two CTAs: 'Create Now' (direct Firefly app entry) and 'Compare Plans', strategically placed to drive immediate trial" },
+  { label: "SNS Video Creation", detail: "Fashion-themed use case: replace clothing colours and patterns using generative AI, generate video from still images, and create high-quality SNS content — all without a reshoot. Targeting creators posting to Instagram, TikTok, and X" },
+  { label: "Product Imagery + Storyboard", detail: "Showcased Firefly Board for generating and comparing visual variations in real time. Storyboard feature highlighted as a brainstorming tool — helping creators plan post sequences and video flow before generating final assets" },
+  { label: "BGM & Sound Effects", detail: "Demonstrated Firefly's audio generation capabilities: generate scene-matched BGM, add sound effects for atmosphere, and combine audio with video — enabling creators to fully produce SNS content within one tool" },
 ];
 
 const fireflyOutcomes = [
@@ -310,7 +310,7 @@ export function Experience() {
                       <span className="w-2.5 h-2.5 rounded-full bg-border" />
                       <span className="w-2.5 h-2.5 rounded-full bg-border" />
                       <span className="w-2.5 h-2.5 rounded-full bg-border" />
-                      <span className="text-xs text-muted-foreground ml-2 font-mono">adobe.com/jp/products/firefly — Use case page (delivered)</span>
+                      <span className="text-xs text-muted-foreground ml-2 font-mono">adobe.com/jp/creativecloud/roc/products/firefly/genai-usecase.html</span>
                     </div>
                     <div className="overflow-y-auto" style={{ maxHeight: "520px" }}>
                       <img
