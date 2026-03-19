@@ -534,7 +534,7 @@ export function Experience() {
 
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
               <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 02 / 03</span>
-              <span className="text-sm text-background/70">Freelance · Netherlands</span>
+              <span className="text-sm text-background/70">Freelance</span>
             </div>
 
             <div className="p-8 md:p-12">
