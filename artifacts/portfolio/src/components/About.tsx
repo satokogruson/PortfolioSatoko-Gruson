@@ -61,20 +61,17 @@ export function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative flex justify-center items-center"
+            className="relative"
           >
-            <div className="relative w-52 sm:w-60">
-              <div className="aspect-square rounded-[2rem] overflow-hidden bg-card border-4 border-background shadow-xl relative z-10">
-                <img
-                  src={`${import.meta.env.BASE_URL}images/profile-original.png`}
-                  alt="Satoko Gruson"
-                  className="w-full h-full object-cover object-top"
-                  style={{ filter: "sepia(0.3) saturate(1.1) hue-rotate(318deg) brightness(1.02)" }}
-                />
-              </div>
-              {/* Decorative background block */}
-              <div className="absolute top-4 -right-4 w-full h-full bg-primary/10 rounded-[2rem] -z-10" />
+            <div className="aspect-square rounded-[2.5rem] overflow-hidden bg-card border-8 border-background shadow-2xl relative z-10">
+              <img
+                src={`${import.meta.env.BASE_URL}images/profile-illustration.png`}
+                alt="Satoko Gruson — illustration"
+                className="w-full h-full object-cover object-top"
+              />
             </div>
+            {/* Decorative background block */}
+            <div className="absolute top-8 -right-8 w-full h-full bg-primary/10 rounded-[2.5rem] -z-10" />
           </motion.div>
 
         </div>
