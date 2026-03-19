@@ -87,20 +87,34 @@ export function About() {
               }}
             />
 
-            {/* Profile card */}
-            <div className="relative z-10 w-64 sm:w-72">
-              <div className="rounded-[2.5rem] overflow-hidden border-4 border-background shadow-2xl">
+            {/* Circle photo with rings */}
+            <div className="relative z-10 flex items-center justify-center w-72 h-72 sm:w-80 sm:h-80">
+              {/* Outer dashed ring */}
+              <div
+                className="absolute inset-0 rounded-full pointer-events-none"
+                style={{
+                  border: "1.5px dashed hsl(350 40% 65% / 0.5)",
+                  transform: "scale(1.18)",
+                }}
+              />
+              {/* Solid rose ring */}
+              <div
+                className="absolute inset-0 rounded-full pointer-events-none"
+                style={{
+                  border: "3px solid hsl(350 40% 65% / 0.7)",
+                  transform: "scale(1.08)",
+                }}
+              />
+              {/* Photo */}
+              <div className="w-full h-full rounded-full overflow-hidden shadow-2xl border-4 border-background">
                 <img
                   src={`${import.meta.env.BASE_URL}images/profile-original.png`}
                   alt="Satoko Gruson"
-                  className="w-full h-full object-cover object-top"
+                  className="w-full h-full object-cover object-top scale-110"
                   style={{ filter: "sepia(0.3) saturate(1.1) hue-rotate(318deg) brightness(1.02)" }}
                 />
               </div>
             </div>
-
-            {/* Decorative background block */}
-            <div className="absolute top-8 -right-8 w-full h-full bg-primary/10 rounded-[2.5rem] -z-10" />
           </motion.div>
 
         </div>
