@@ -1,8 +1,9 @@
 import { Navigation } from "@/components/Navigation";
 import { Hero } from "@/components/Hero";
 import { Projects } from "@/components/Projects";
-import { Experience } from "@/components/Experience";
 import { About } from "@/components/About";
+import { Experience } from "@/components/Experience";
+import { PasswordGate } from "@/components/PasswordGate";
 import { Footer } from "@/components/Footer";
 import { useEffect } from "react";
 
@@ -27,8 +28,12 @@ export default function Home() {
       <main>
         <Hero />
         <Projects />
-        <Experience />
         <About />
+        <section id="experience">
+          <PasswordGate>
+            <Experience />
+          </PasswordGate>
+        </section>
       </main>
 
       <Footer />

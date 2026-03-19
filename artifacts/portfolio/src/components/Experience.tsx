@@ -67,7 +67,7 @@ const medicusDesignDecisions = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-24 md:py-32 bg-background relative">
+    <section className="py-24 md:py-32 bg-background relative">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         {/* Section header */}
