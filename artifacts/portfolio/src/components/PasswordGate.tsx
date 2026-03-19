@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Lock, Eye, EyeOff } from "lucide-react";
 
-const SESSION_KEY = "portfolio_experience_unlocked";
+const SESSION_KEY = "portfolio_experience_unlocked_v2";
 const CORRECT_PASSWORD = "portfolio2025";
 
 interface PasswordGateProps {
