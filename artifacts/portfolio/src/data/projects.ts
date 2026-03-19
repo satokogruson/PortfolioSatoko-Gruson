@@ -10,40 +10,6 @@ export interface Project {
 }
 
 export const projectsData: Project[] = [
-  // FRONTEND
-  {
-    id: "savor-the-globe",
-    title: "Savor the Globe",
-    description: "From local favorites to global sensations, find the top five dishes that define dining around the world.",
-    category: "Frontend",
-    link: "https://gruson-top-5-dishes.netlify.app/",
-    image: "https://satokogruson.github.io/img/savor_the_globe.png"
-  },
-  {
-    id: "world-clock",
-    title: "World Clock App",
-    description: "A dynamic tool to view global time zones efficiently. Designed to improve productivity and global communication.",
-    category: "Frontend",
-    link: "https://gruson-world-clock.netlify.app/",
-    image: "https://satokogruson.github.io/img/world-clock.png"
-  },
-  {
-    id: "weather-app",
-    title: "Weather App",
-    description: "Get real-time weather updates with this highly interactive and customizable weather application.",
-    category: "Frontend",
-    link: "https://gruson-weather-app.netlify.app/",
-    image: "https://satokogruson.github.io/img/weather-app.png"
-  },
-  {
-    id: "sweet-macarons",
-    title: "Sweet Macarons",
-    description: "Check out my sweet and tasty Macaron mini-website, my very first coding project with SheCodes.",
-    category: "Frontend",
-    link: "https://gruson-sweet-macarons.netlify.app/",
-    image: "https://satokogruson.github.io/img/sweet-macarons.png"
-  },
-  
   // UI/UX
   {
     id: "freshfusion",
@@ -78,4 +44,37 @@ export const projectsData: Project[] = [
     image: "https://satokogruson.github.io/img/Traveco.png"
   },
 
+  // FRONTEND
+  {
+    id: "savor-the-globe",
+    title: "Savor the Globe",
+    description: "From local favorites to global sensations, find the top five dishes that define dining around the world.",
+    category: "Frontend",
+    link: "https://gruson-top-5-dishes.netlify.app/",
+    image: "https://satokogruson.github.io/img/savor_the_globe.png"
+  },
+  {
+    id: "world-clock",
+    title: "World Clock App",
+    description: "A dynamic tool to view global time zones efficiently. Designed to improve productivity and global communication.",
+    category: "Frontend",
+    link: "https://gruson-world-clock.netlify.app/",
+    image: "https://satokogruson.github.io/img/world-clock.png"
+  },
+  {
+    id: "weather-app",
+    title: "Weather App",
+    description: "Get real-time weather updates with this highly interactive and customizable weather application.",
+    category: "Frontend",
+    link: "https://gruson-weather-app.netlify.app/",
+    image: "https://satokogruson.github.io/img/weather-app.png"
+  },
+  {
+    id: "sweet-macarons",
+    title: "Sweet Macarons",
+    description: "Check out my sweet and tasty Macaron mini-website, my very first coding project with SheCodes.",
+    category: "Frontend",
+    link: "https://gruson-sweet-macarons.netlify.app/",
+    image: "https://satokogruson.github.io/img/sweet-macarons.png"
+  },
 ];
