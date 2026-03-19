@@ -1,5 +1,46 @@
 import { motion } from "framer-motion";
-import { Briefcase, BarChart2, Globe, Users, ArrowUpRight } from "lucide-react";
+import { Briefcase, BarChart2, Globe, Users, ArrowUpRight, TrendingUp, MousePointerClick, Star } from "lucide-react";
+
+const fireflyProcess = [
+  { step: "01", label: "Discovery & Gap Analysis", detail: "Reviewed Firefly global page performance for Japan. Identified engagement gap driven by cultural disconnection — imagery and use cases that did not reflect Japanese creators or their workflows." },
+  { step: "02", label: "Audience Definition", detail: "Defined primary persona: young Japanese SNS creators (Instagram, TikTok, X) who create original content and are highly sensitive to visual authenticity. This persona shaped every content and creative decision." },
+  { step: "03", label: "Use Case Mapping", detail: "Collaborated with the Japan marketing team to identify the most relevant creative scenarios: SNS video creation, product image generation, BGM & sound effects, and storyboarding — structured into the page's section architecture." },
+  { step: "04", label: "Creative Direction & Agency Briefing", detail: "Briefed a creative agency with detailed culturalisation guidelines. Defined scenarios, talent direction, aesthetics, and visual contexts that would feel authentically Japanese — not superficially swapped stock imagery." },
+  { step: "05", label: "Copy Localisation", detail: "Worked with copywriters to ensure Japanese copy matched the tone of young SNS creators — casual, aspirational, and direct — rather than a literal translation of global marketing language." },
+  { step: "06", label: "Build, QA & Launch", detail: "Coordinated page build with the global CMS team. Managed QA across devices and breakpoints. Oversaw launch and coordinated stakeholder sign-off from both Japan and global teams." },
+  { step: "07", label: "Post-Launch Tracking", detail: "Monitored engagement and app referral clicks post-launch using Adobe Analytics and Contentsquare. Reported results to Japan and global stakeholders." },
+];
+
+const fireflyPageSections = [
+  { label: "Hero section", detail: "Culturalised hero with Japanese model and Japanese-language headline targeting SNS creators" },
+  { label: "SNS Video Creation", detail: "Use case: creating videos for social media — storyboard → generate → post" },
+  { label: "Product Imagery", detail: "Use case: generating product imagery for e-commerce and campaigns" },
+  { label: "BGM & Sound Effects", detail: "Use case: adding background music and sound effects to video content" },
+  { label: "Plans & CTA", detail: "Pricing plans and CTA — localised tier names and pricing in JPY" },
+];
+
+const fireflyOutcomes = [
+  { icon: TrendingUp, label: "Engagement", detail: "Users spent significantly more time interacting with the culturalised use case content vs. the previous globally-templated page" },
+  { icon: MousePointerClick, label: "App Referral Clicks", detail: "Click-through to Firefly app entry points increased post-launch, indicating stronger intent among Japanese visitors" },
+  { icon: Star, label: "Stakeholder Recognition", detail: "Positively received by Japan and global teams as a model for market-specific culturalisation within Adobe's web ecosystem" },
+];
+
+const genAiProject = {
+  title: "GenAI Credit Comprehension — A/B Test",
+  description: "Japanese users on the Creative Cloud plans page were confused by the GenAI credit comparison between plans. I proposed and led the redesign of the GenAI comparison chart and the use cases section — the two sections at the critical decision point where users choose between Creative Cloud and Creative Cloud Pro.",
+  contributions: [
+    "Restructured the comparison chart to clearly differentiate Standard vs Premium GenAI features and credit allocation per plan",
+    "Added Japanese-localised use case examples below the chart — helping users understand what they could actually create with each tier",
+    "Coordinated implementation across CMS and global development teams within Japan's localisation constraints",
+  ],
+  result: "Improved comprehension of GenAI credit differences at the key conversion decision point — contributing to a projected QARR uplift.",
+};
+
+const adobeContext = [
+  { icon: Globe, label: "Localisation Gap", detail: "Global page templates optimised for Western users underperformed in Japan — requiring targeted, localised improvements." },
+  { icon: BarChart2, label: "GenAI Comprehension", detail: "Behavioural data revealed significant confusion at point of purchase around AI credits — suppressing conversion on the plans page." },
+  { icon: Users, label: "Cross-functional Complexity", detail: "Every improvement required coordination across global dev, CMS, design, analytics, and paid media teams across multiple time zones." },
+];
 
 const adobeProcess = [
   { step: "01", label: "Analyse", detail: "Adobe Analytics + Contentsquare to identify friction & user confusion" },
@@ -7,35 +48,6 @@ const adobeProcess = [
   { step: "03", label: "Propose", detail: "Develop solution within global template & brand constraints" },
   { step: "04", label: "Collaborate", detail: "Work with JP marketing team + vendor to produce localised content" },
   { step: "05", label: "Deliver", detail: "Coordinate CMS implementation, QA, release & performance tracking" },
-];
-
-const adobeProjects = [
-  {
-    title: "GenAI Credit Comprehension — A/B Test",
-    type: "Featured Project",
-    typeColor: "bg-primary/10 text-primary",
-    description:
-      "Japanese users on the Creative Cloud plans page were confused by the GenAI credit comparison between plans. I proposed and led the redesign of the GenAI comparison chart and the use cases section — the two sections at the critical decision point where users choose between Creative Cloud and Creative Cloud Pro.",
-    contributions: [
-      "Restructured the comparison chart to clearly differentiate Standard vs Premium GenAI features and credit allocation per plan",
-      "Added Japanese-localised use case examples below the chart — helping users understand what they could actually create with each tier",
-      "Coordinated implementation across CMS and global development teams within Japan's localisation constraints",
-    ],
-    result: "Improved comprehension of GenAI credit differences at the key conversion decision point — contributing to a projected QARR uplift.",
-  },
-  {
-    title: "Firefly Japan Feature Pages — Culturalisation",
-    type: "Additional Project",
-    typeColor: "bg-secondary text-foreground/70",
-    description:
-      "I identified and led a culturalisation initiative across multiple Adobe Firefly Japan feature pages — including the text-to-image and AI video generator pages.",
-    contributions: [
-      "Replaced hero image galleries with Japan-relevant content: anime-style illustrations, Japanese urban scenes, cherry blossoms",
-      "Worked with the content vendor to produce Japanese-language prompt examples and locally relevant generated outputs",
-      "Expanded and optimised related feature card sections — improving cross-linking between Firefly capabilities with culturalised imagery",
-    ],
-    result: "Increased generation engagement and app referral clicks across Firefly Japan pages.",
-  },
 ];
 
 const crossFunctional = [
@@ -47,22 +59,10 @@ const crossFunctional = [
 ];
 
 const medicusDesignDecisions = [
-  {
-    label: "Visual Identity",
-    detail: "Deep forest green with gold accents — conveying clinical trust, premium positioning, and warmth.",
-  },
-  {
-    label: "Navigation Architecture",
-    detail: "Separated patient and HCP journeys at top-level nav — preventing audience confusion while serving both conversion goals.",
-  },
-  {
-    label: "HCP Inquiry UX",
-    detail: "Designed a 5-step visual onboarding flow (Inquire → Consult → Appoint → Tour → Sign) to reduce perceived friction.",
-  },
-  {
-    label: "Specialty Discovery",
-    detail: "Introduced filterable specialty cards and a persistent location-based selector — resolving a friction point identified in user testing.",
-  },
+  { label: "Visual Identity", detail: "Deep forest green with gold accents — conveying clinical trust, premium positioning, and warmth." },
+  { label: "Navigation Architecture", detail: "Separated patient and HCP journeys at top-level nav — preventing audience confusion while serving both conversion goals." },
+  { label: "HCP Inquiry UX", detail: "Designed a 5-step visual onboarding flow (Inquire → Consult → Appoint → Tour → Sign) to reduce perceived friction." },
+  { label: "Specialty Discovery", detail: "Introduced filterable specialty cards and a persistent location-based selector — resolving a friction point identified in user testing." },
 ];
 
 export function Experience() {
@@ -109,20 +109,13 @@ export function Experience() {
           transition={{ duration: 0.6 }}
           className="mb-24"
         >
-          {/* Case study card header */}
           <div className="rounded-2xl border border-border bg-card overflow-hidden">
 
             {/* Top bar */}
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <div className="flex items-center gap-3">
-                <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 01 / 02</span>
-              </div>
-              <a
-                href="https://www.adobe.com/jp/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-1.5 text-sm text-background/70 hover:text-background transition-colors"
-              >
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 01 / 02</span>
+              <a href="https://www.adobe.com/jp/" target="_blank" rel="noopener noreferrer"
+                className="flex items-center gap-1.5 text-sm text-background/70 hover:text-background transition-colors">
                 adobe.com/jp <ArrowUpRight size={14} />
               </a>
             </div>
@@ -132,10 +125,8 @@ export function Experience() {
               {/* Title + meta */}
               <div className="flex flex-wrap items-start justify-between gap-6 mb-10">
                 <div>
-                  <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-2">
-                    Adobe Japan
-                  </h3>
-                  <p className="text-lg text-muted-foreground">Web Experience & A/B Testing</p>
+                  <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-2">Adobe Japan</h3>
+                  <p className="text-lg text-muted-foreground">Web Experience & A/B Testing · Culturalisation</p>
                 </div>
                 <div className="grid grid-cols-2 gap-x-10 gap-y-3 text-sm">
                   {[
@@ -155,18 +146,13 @@ export function Experience() {
               {/* Business context */}
               <div className="mb-10">
                 <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />
-                  Business Context & Challenge
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Business Context & Challenge
                 </h4>
-                <p className="text-foreground/80 leading-relaxed mb-6">
+                <p className="text-foreground/80 leading-relaxed mb-6 text-sm">
                   Adobe Japan's website is the primary conversion channel for Creative Cloud subscriptions in Japan — a market with distinct user behaviours, reading patterns, and purchasing decision processes compared to Western audiences. My role covers end-to-end web ownership: from identifying UX friction through data analysis, to designing experiments, coordinating global delivery, and reporting business impact.
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                  {[
-                    { icon: Globe, label: "Localisation Gap", detail: "Global page templates optimised for Western users underperformed in Japan — requiring targeted, localised improvements." },
-                    { icon: BarChart2, label: "GenAI Comprehension", detail: "Behavioural data revealed significant confusion at point of purchase around AI credits — suppressing conversion on the plans page." },
-                    { icon: Users, label: "Cross-functional Complexity", detail: "Every improvement required coordination across global dev, CMS, design, analytics, and paid media teams across multiple time zones." },
-                  ].map(({ icon: Icon, label, detail }) => (
+                  {adobeContext.map(({ icon: Icon, label, detail }) => (
                     <div key={label} className="rounded-xl bg-secondary/50 p-5 border border-border">
                       <Icon size={18} className="text-primary mb-3" />
                       <h5 className="font-medium text-foreground mb-2 text-sm">{label}</h5>
@@ -176,62 +162,173 @@ export function Experience() {
                 </div>
               </div>
 
-              {/* Process */}
-              <div className="mb-12">
-                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-6 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />
-                  My Process
+              {/* ── Project A: GenAI A/B Test ── */}
+              <div className="mb-10">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Project A
                 </h4>
-                <div className="relative">
-                  {/* Connecting line */}
-                  <div className="hidden md:block absolute top-6 left-6 right-6 h-[1px] bg-border" />
-                  <div className="grid grid-cols-2 md:grid-cols-5 gap-4 relative">
-                    {adobeProcess.map(({ step, label, detail }) => (
-                      <div key={step} className="flex flex-col items-center text-center">
-                        <div className="w-12 h-12 rounded-full bg-background border-2 border-primary/30 flex items-center justify-center text-primary font-mono text-sm font-semibold mb-3 relative z-10 shrink-0">
-                          {step}
-                        </div>
-                        <p className="font-semibold text-foreground text-sm mb-1">{label}</p>
-                        <p className="text-xs text-muted-foreground leading-relaxed">{detail}</p>
+                <div className="rounded-xl border border-border p-6 md:p-8">
+                  <div className="flex flex-wrap items-center gap-3 mb-4">
+                    <span className="text-xs font-medium px-3 py-1 rounded-full uppercase tracking-wide bg-primary/10 text-primary">
+                      A/B Test · CRO
+                    </span>
+                    <h5 className="text-lg font-semibold text-foreground">{genAiProject.title}</h5>
+                  </div>
+
+                  {/* 5-step process */}
+                  <div className="mb-6">
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-mono">My Process</p>
+                    <div className="relative">
+                      <div className="hidden md:block absolute top-6 left-6 right-6 h-[1px] bg-border" />
+                      <div className="grid grid-cols-2 md:grid-cols-5 gap-4 relative">
+                        {adobeProcess.map(({ step, label, detail }) => (
+                          <div key={step} className="flex flex-col items-center text-center">
+                            <div className="w-12 h-12 rounded-full bg-background border-2 border-primary/30 flex items-center justify-center text-primary font-mono text-sm font-semibold mb-3 relative z-10 shrink-0">
+                              {step}
+                            </div>
+                            <p className="font-semibold text-foreground text-xs mb-1">{label}</p>
+                            <p className="text-xs text-muted-foreground leading-relaxed">{detail}</p>
+                          </div>
+                        ))}
                       </div>
+                    </div>
+                  </div>
+
+                  <p className="text-foreground/80 leading-relaxed mb-5 text-sm">{genAiProject.description}</p>
+                  <ul className="space-y-2 mb-5">
+                    {genAiProject.contributions.map((item) => (
+                      <li key={item} className="flex items-start gap-2 text-sm text-foreground/70">
+                        <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
+                        {item}
+                      </li>
                     ))}
+                  </ul>
+
+                  {/* Image placeholder — GenAI */}
+                  <div className="rounded-lg border-2 border-dashed border-border bg-secondary/20 p-6 text-center mb-5">
+                    <p className="text-xs text-muted-foreground">Screenshots coming soon — GenAI comparison chart & use cases section</p>
+                  </div>
+
+                  <div className="rounded-lg bg-primary/8 border border-primary/20 px-5 py-3 text-sm text-foreground/80">
+                    <span className="font-semibold text-primary mr-2">Result</span>
+                    {genAiProject.result}
+                    <span className="ml-2 text-xs text-muted-foreground italic">Specific metrics omitted in accordance with confidentiality obligations.</span>
                   </div>
                 </div>
               </div>
 
-              {/* Featured + Additional Projects */}
-              <div className="space-y-6 mb-12">
-                {adobeProjects.map((project) => (
-                  <div key={project.title} className="rounded-xl border border-border p-6 md:p-8">
-                    <div className="flex flex-wrap items-center gap-3 mb-4">
-                      <span className={`text-xs font-medium px-3 py-1 rounded-full uppercase tracking-wide ${project.typeColor}`}>
-                        {project.type}
-                      </span>
-                      <h5 className="text-lg font-semibold text-foreground">{project.title}</h5>
+              {/* ── Project B: Firefly Japan Culturalisation ── */}
+              <div className="mb-10">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Project B
+                </h4>
+                <div className="rounded-xl border border-border p-6 md:p-8">
+                  <div className="flex flex-wrap items-center gap-3 mb-2">
+                    <span className="text-xs font-medium px-3 py-1 rounded-full uppercase tracking-wide bg-secondary text-foreground/70">
+                      Culturalisation · UX Content Strategy
+                    </span>
+                    <h5 className="text-lg font-semibold text-foreground">Adobe Firefly Japan — Use Case Page Culturalisation</h5>
+                  </div>
+                  <p className="text-xs text-muted-foreground mb-6 font-mono uppercase tracking-widest">Web PM · Adobe Analytics · Contentsquare</p>
+
+                  {/* Problem + Goal */}
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                    <div className="rounded-lg bg-secondary/40 border border-border p-5">
+                      <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-2">The Problem</p>
+                      <p className="text-sm text-foreground/80 leading-relaxed">
+                        Adobe Firefly's global website was built around Western visual references — models, aesthetics, and lifestyle imagery that felt distant to Japanese users. For a product whose core value is "imagine what you could create", the lack of cultural identification was a significant barrier to engagement. Young SNS-native Japanese creators could not see themselves in the product.
+                      </p>
                     </div>
-                    <p className="text-foreground/80 leading-relaxed mb-5 text-sm">{project.description}</p>
-                    <ul className="space-y-2 mb-5">
-                      {project.contributions.map((item) => (
-                        <li key={item} className="flex items-start gap-2 text-sm text-foreground/70">
-                          <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
-                          {item}
-                        </li>
-                      ))}
-                    </ul>
-                    <div className="rounded-lg bg-primary/8 border border-primary/20 px-5 py-3 text-sm text-foreground/80">
-                      <span className="font-semibold text-primary mr-2">Result</span>
-                      {project.result}
-                      <span className="ml-2 text-xs text-muted-foreground italic">Specific metrics omitted in accordance with confidentiality obligations.</span>
+                    <div className="rounded-lg bg-primary/5 border border-primary/20 p-5">
+                      <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-2">The Goal</p>
+                      <ul className="space-y-1.5">
+                        {[
+                          "Speak directly to young Japanese SNS creators (Instagram, TikTok, X)",
+                          "Showcase use cases relevant to their creative workflows",
+                          "Use culturalised imagery that felt native, not translated",
+                          "Drive page engagement and app referral clicks",
+                        ].map((item) => (
+                          <li key={item} className="flex items-start gap-2 text-sm text-foreground/80">
+                            <span className="w-1.5 h-1.5 rounded-full bg-primary mt-1.5 shrink-0" />
+                            {item}
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                ))}
+
+                  {/* Key insight callout */}
+                  <div className="rounded-lg border-l-4 border-primary bg-primary/5 px-5 py-4 mb-6">
+                    <p className="text-xs font-mono uppercase tracking-widest text-primary mb-1">Key Insight</p>
+                    <p className="text-sm text-foreground/80 italic leading-relaxed">
+                      Localisation is not translation. For Firefly to resonate with Japanese creators, users needed to see people like themselves, creating content they recognised, in contexts they lived in.
+                    </p>
+                  </div>
+
+                  {/* 7-step process */}
+                  <div className="mb-6">
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground mb-5 font-mono">My Process — 7 Steps</p>
+                    <div className="space-y-3">
+                      {fireflyProcess.map(({ step, label, detail }) => (
+                        <div key={step} className="flex gap-4 p-4 rounded-lg border border-border bg-secondary/20">
+                          <span className="text-primary font-mono text-sm font-semibold w-8 shrink-0">{step}</span>
+                          <div>
+                            <span className="font-semibold text-foreground text-sm">{label} — </span>
+                            <span className="text-sm text-foreground/70 leading-relaxed">{detail}</span>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Page structure */}
+                  <div className="mb-6">
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-mono">Final Page Structure</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                      {fireflyPageSections.map(({ label, detail }, i) => (
+                        <div key={label} className="rounded-lg border border-border p-4 bg-background">
+                          <span className="text-xs font-mono text-primary/60 block mb-1">Section {String(i + 1).padStart(2, "0")}</span>
+                          <span className="font-semibold text-foreground text-sm block mb-1">{label}</span>
+                          <span className="text-xs text-muted-foreground leading-relaxed">{detail}</span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
+                  {/* Image placeholder — Firefly */}
+                  <div className="rounded-lg border-2 border-dashed border-border bg-secondary/20 p-6 text-center mb-6">
+                    <p className="text-xs text-muted-foreground">Screenshots coming soon — Firefly Japan use case page sections</p>
+                  </div>
+
+                  {/* Outcomes */}
+                  <div className="mb-5">
+                    <p className="text-xs uppercase tracking-widest text-muted-foreground mb-4 font-mono">Outcomes</p>
+                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                      {fireflyOutcomes.map(({ icon: Icon, label, detail }) => (
+                        <div key={label} className="rounded-xl bg-secondary/40 border border-border p-5">
+                          <Icon size={18} className="text-primary mb-3" />
+                          <h5 className="font-semibold text-foreground text-sm mb-2">{label}</h5>
+                          <p className="text-xs text-muted-foreground leading-relaxed">{detail}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="text-xs text-muted-foreground italic mt-3">Specific metrics omitted in accordance with confidentiality obligations.</p>
+                  </div>
+
+                  {/* Key takeaway */}
+                  <div className="rounded-xl bg-secondary/30 border-l-4 border-primary p-5">
+                    <p className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-2">Key Takeaway</p>
+                    <p className="text-sm text-foreground/80 leading-relaxed">
+                      Effective culturalisation requires understanding who the user is, what they aspire to create, and how they see themselves — then building an experience that reflects that identity back to them. This project demonstrated that audience-first content strategy, paired with intentional creative direction, can meaningfully close the gap between a global product and a local user.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Cross-functional delivery */}
               <div className="mb-10">
                 <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />
-                  Cross-functional Delivery
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Cross-functional Delivery
                 </h4>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
                   {crossFunctional.map(({ label, detail }) => (
@@ -249,8 +346,7 @@ export function Experience() {
               {/* Reflection */}
               <div className="rounded-xl bg-secondary/30 border-l-4 border-primary p-6 md:p-8">
                 <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-3 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />
-                  Reflection & Learnings
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Reflection & Learnings
                 </h4>
                 <p className="text-foreground/80 leading-relaxed text-sm">
                   This role deepened my ability to connect UX decisions directly to business outcomes. The most valuable shift has been framing every web improvement as a business case — with projected revenue impact — rather than a design improvement alone. This builds stakeholder trust and accelerates approval cycles. Operating at the intersection of Japan market needs and global platform constraints has also sharpened my skill in finding pragmatic, high-impact solutions within structured systems.
@@ -270,7 +366,6 @@ export function Experience() {
         >
           <div className="rounded-2xl border border-border bg-card overflow-hidden">
 
-            {/* Top bar */}
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
               <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 02 / 02</span>
               <span className="text-sm text-background/70">Freelance · Austria</span>
@@ -302,8 +397,7 @@ export function Experience() {
               {/* Business challenge */}
               <div className="mb-10">
                 <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />
-                  Business Challenge
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Business Challenge
                 </h4>
                 <p className="text-foreground/80 leading-relaxed mb-5 text-sm">
                   Medicus Practice is an innovative Austrian healthcare platform enabling independent physicians and therapists to operate flexibly, digitally, and with full practice infrastructure — a fundamentally new model in the Austrian healthcare market. The challenge was to design a landing page system that communicated this complex proposition clearly, while driving two distinct conversion goals: patient appointment bookings and healthcare professional (HCP) network inquiries.
@@ -325,8 +419,7 @@ export function Experience() {
               {/* Key design decisions */}
               <div className="mb-10">
                 <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />
-                  Key Design Decisions
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Key Design Decisions
                 </h4>
                 <div className="space-y-3">
                   {medicusDesignDecisions.map(({ label, detail }) => (
@@ -344,8 +437,7 @@ export function Experience() {
               {/* Figma embed */}
               <div className="mb-10">
                 <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-6 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />
-                  Figma Design File
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Figma Design File
                 </h4>
                 <div className="rounded-xl overflow-hidden border border-border bg-secondary/20">
                   <iframe
@@ -362,8 +454,7 @@ export function Experience() {
               {/* Outcome */}
               <div className="rounded-xl bg-secondary/30 border-l-4 border-primary p-6 md:p-8">
                 <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-3 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />
-                  Outcome & Reflection
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Outcome & Reflection
                 </h4>
                 <p className="text-foreground/80 leading-relaxed text-sm">
                   Delivered a complete multi-page design system covering all patient and HCP journeys — from homepage through specialisation directory, location pages, HCP inquiry, and web shop. The project required end-to-end capability: information architecture, visual design, component systems, image retouching, and logo adaptation — all delivered as a Figma prototype ready for developer handoff.
