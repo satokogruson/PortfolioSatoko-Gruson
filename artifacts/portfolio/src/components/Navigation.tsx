@@ -34,12 +34,13 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a 
           href="#top" 
-          className="font-serif text-2xl font-semibold tracking-wide text-foreground flex items-center gap-2 group"
+          className="flex items-center"
         >
-          <span className="w-8 h-8 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-colors duration-300">
-            S
-          </span>
-          Gruson.
+          <img
+            src="/images/sg-logo.png"
+            alt="SG Logo"
+            className="h-10 w-10 object-contain"
+          />
         </a>
 
         {/* Desktop Nav */}
