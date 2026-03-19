@@ -27,13 +27,15 @@ const fireflyOutcomes = [
 
 const genAiProject = {
   title: "GenAI Credit Comprehension — A/B Test",
-  description: "Japanese users on the Creative Cloud plans page were confused by the GenAI credit comparison between plans. I proposed and led the redesign of the GenAI comparison chart and the use cases section — the two sections at the critical decision point where users choose between Creative Cloud and Creative Cloud Pro.",
+  description: "Analytics data showed a high volume of Japanese users scrolling down to the FAQ section of the Creative Cloud plans page — a signal that they were leaving the decision point to look for answers. User research confirmed the root cause: users did not understand what GenAI credits are, how they are allocated, or why they differ between plans. To address this, I proposed and led an A/B test introducing a dedicated GenAI comparison table — with feature cards clearly separated into Standard Credits and Premium Credits — to improve comprehension at the critical plan selection moment and drive increased conversions.",
   contributions: [
-    "Restructured the comparison chart to clearly differentiate Standard vs Premium GenAI features and credit allocation per plan",
-    "Added Japanese-localised use case examples below the chart — helping users understand what they could actually create with each tier",
-    "Coordinated implementation across CMS and global development teams within Japan's localisation constraints",
+    "Identified the problem through behavioural data: high FAQ scroll rates signalled confusion at the point of plan selection",
+    "Validated with user research: Japanese users lacked understanding of what GenAI credits are and how Standard vs Premium credits differ",
+    "Designed and proposed an A/B test adding a GenAI comparison table with feature cards separated by credit type (Standard and Premium)",
+    "Coordinated implementation with CMS and global development teams within Japan's localisation constraints",
+    "Tracked test performance and reported results to Japan and global stakeholders",
   ],
-  result: "Improved comprehension of GenAI credit differences at the key conversion decision point — contributing to a projected QARR uplift.",
+  result: "The A/B test aimed to improve comprehension of GenAI credit differences at the key conversion decision point — with the goal of reducing FAQ dependency and contributing to an uplift in plan conversions.",
 };
 
 const adobeContext = [
