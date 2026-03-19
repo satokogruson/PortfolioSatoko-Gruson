@@ -341,6 +341,38 @@ export function Experience() {
                 </div>
               </div>
 
+              {/* Selected screens gallery */}
+              <div className="mb-10">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-6 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />
+                  Selected Final Screens
+                </h4>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  {[
+                    { src: "medicus/landing-page.jpg", caption: "Patient Homepage — hero, specialisations & bookable courses" },
+                    { src: "medicus/hcp-landing.jpg", caption: "HCP Landing Page — concept, services & image gallery" },
+                    { src: "medicus/web-shop.jpg", caption: "Web Shop — product categories & featured items" },
+                    { src: "medicus/doctor-profile.jpg", caption: "Doctor Profile — bio, services, qualifications & reviews" },
+                    { src: "medicus/partner-program.jpg", caption: "Partner Program — affiliate plans, how it works & FAQ" },
+                    { src: "medicus/about-us.jpg", caption: "About Us — story, values & team" },
+                  ].map(({ src, caption }) => (
+                    <div key={src} className="group rounded-xl overflow-hidden border border-border bg-secondary/20 flex flex-col">
+                      <div className="overflow-hidden bg-muted/30">
+                        <img
+                          src={`${import.meta.env.BASE_URL}images/${src}`}
+                          alt={caption}
+                          className="w-full h-auto object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                          loading="lazy"
+                        />
+                      </div>
+                      <p className="text-xs text-muted-foreground px-4 py-3 leading-relaxed border-t border-border">
+                        {caption}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
               {/* Outcome */}
               <div className="rounded-xl bg-secondary/30 border-l-4 border-primary p-6 md:p-8">
                 <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-3 flex items-center gap-2">
