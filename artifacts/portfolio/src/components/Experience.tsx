@@ -536,7 +536,7 @@ export function Experience() {
               <div className="flex flex-wrap items-start justify-between gap-6 mb-10">
                 <div>
                   <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-2">Medicus Practice</h3>
-                  <p className="text-lg text-muted-foreground">Landing Page Design</p>
+                  <p className="text-lg text-muted-foreground">End-to-End Website Design — Built from Scratch</p>
                 </div>
                 <div className="grid grid-cols-2 gap-x-10 gap-y-3 text-sm">
                   {[
@@ -572,6 +572,34 @@ export function Experience() {
                       <p className="text-sm text-muted-foreground leading-relaxed">{detail}</p>
                     </div>
                   ))}
+                </div>
+              </div>
+
+              {/* Design Process */}
+              <div className="mb-10">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Design Process — End to End
+                </h4>
+                <div className="relative">
+                  <div className="hidden md:block absolute top-6 left-6 right-6 h-[1px] bg-border" />
+                  <div className="grid grid-cols-2 md:grid-cols-6 gap-4 relative">
+                    {[
+                      { step: "01", label: "Discovery & Brief", detail: "Client workshops to understand their business model, target audiences, and goals" },
+                      { step: "02", label: "Information Architecture", detail: "Mapped the full site structure — separating patient and HCP journeys to prevent confusion" },
+                      { step: "03", label: "User Journey Mapping", detail: "Defined end-to-end journeys for both patients and healthcare professionals from entry to conversion" },
+                      { step: "04", label: "Wireframing", detail: "Low and mid-fidelity wireframes covering all pages — iterated with client feedback at each stage" },
+                      { step: "05", label: "Visual Design", detail: "High-fidelity designs in Figma — visual identity, components, imagery retouching, and logo adaptation in Illustrator and Photoshop" },
+                      { step: "06", label: "Prototype & Handoff", detail: "Interactive Figma prototype delivered for stakeholder review and developer handoff" },
+                    ].map(({ step, label, detail }) => (
+                      <div key={step} className="flex flex-col items-center text-center">
+                        <div className="w-12 h-12 rounded-full bg-background border-2 border-primary/30 flex items-center justify-center text-primary font-mono text-sm font-semibold mb-3 relative z-10 shrink-0">
+                          {step}
+                        </div>
+                        <p className="font-semibold text-foreground text-xs mb-1">{label}</p>
+                        <p className="text-xs text-muted-foreground leading-relaxed">{detail}</p>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
 
@@ -616,10 +644,10 @@ export function Experience() {
                   <span className="w-4 h-[1px] bg-muted-foreground" />Outcome & Reflection
                 </h4>
                 <p className="text-foreground/80 leading-relaxed text-sm">
-                  Delivered a complete multi-page design system covering all patient and HCP journeys — from homepage through specialisation directory, location pages, HCP inquiry, and web shop. The project required end-to-end capability: information architecture, visual design, component systems, image retouching, and logo adaptation — all delivered as a Figma prototype ready for developer handoff.
+                  Delivered a complete website design built entirely from scratch — in close collaboration with the client at every stage. The full Figma file documents the journey from initial discovery and information architecture through user journey mapping, wireframing, and high-fidelity visual design, to an interactive prototype ready for developer handoff. Every page in the system — homepage, specialisation directory, location pages, HCP inquiry flow, and web shop — was designed end-to-end, including logo adaptation and image retouching in Illustrator and Photoshop.
                 </p>
                 <p className="text-foreground/80 leading-relaxed text-sm mt-3">
-                  Key learning: designing for a dual audience requires disciplined IA decisions early. User testing proved essential in catching misinterpretation issues that would not have been visible from the design alone.
+                  Key learning: designing for a dual audience requires disciplined information architecture decisions from day one. Working directly with the client through each design phase ensured the output matched both their business goals and the real needs of their users.
                 </p>
               </div>
 
