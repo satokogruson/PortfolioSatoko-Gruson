@@ -89,11 +89,12 @@ export function About() {
 
             {/* Profile card */}
             <div className="relative z-10 w-64 sm:w-72">
-              <div className="rounded-[2.5rem] overflow-hidden border-4 border-background shadow-2xl grayscale">
+              <div className="rounded-[2.5rem] overflow-hidden border-4 border-background shadow-2xl">
                 <img
                   src={`${import.meta.env.BASE_URL}images/profile-original.png`}
                   alt="Satoko Gruson"
                   className="w-full h-full object-cover object-top"
+                  style={{ filter: "sepia(0.3) saturate(1.1) hue-rotate(318deg) brightness(1.02)" }}
                 />
               </div>
             </div>
