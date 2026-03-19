@@ -6,22 +6,21 @@ export function Hero() {
     <section
       id="top"
       className="relative min-h-screen flex items-center pt-20 overflow-hidden"
+      style={{
+        backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-bg.png)`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundColor: "hsl(350 60% 92%)",
+      }}
     >
-      {/* Full background image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src={`${import.meta.env.BASE_URL}images/hero-bg.png`}
-          alt="Abstract pink background"
-          className="w-full h-full object-cover object-center"
-        />
-        {/* Very subtle gradient at the bottom so content transitions smoothly */}
-        <div
-          className="absolute inset-0"
-          style={{
-            background: "linear-gradient(to bottom, transparent 50%, hsl(350 40% 96%) 100%)",
-          }}
-        />
-      </div>
+      {/* Subtle gradient fade at the bottom to blend into the next section */}
+      <div
+        className="absolute inset-0 z-0"
+        style={{
+          background: "linear-gradient(to bottom, transparent 60%, hsl(350 40% 96%) 100%)",
+        }}
+      />
 
       {/* Floating blush orbs — soft, light-toned */}
       <motion.div
