@@ -559,7 +559,7 @@ export function Experience() {
                   <span className="w-4 h-[1px] bg-muted-foreground" />Business Challenge
                 </h4>
                 <p className="text-foreground/80 leading-relaxed mb-5 text-sm">
-                  Medicus Practice is an innovative Austrian healthcare platform enabling independent physicians and therapists to operate flexibly, digitally, and with full practice infrastructure — a fundamentally new model in the Austrian healthcare market. The challenge was to design a landing page system that communicated this complex proposition clearly, while driving two distinct conversion goals: patient appointment bookings and healthcare professional (HCP) network inquiries.
+                  Medicus Practice is a cutting-edge practice solution for independent physicians and therapists, enabling a completely new way of working — flexible, connected, and digital. Their product range includes fully equipped practice and therapy rooms, professional practice management solutions, and a nationwide network of virtual practices in Austria. The landing page design was created using Figma, with Adobe Illustrator and Photoshop used to alter logos and sharpen imagery.
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                   {[
