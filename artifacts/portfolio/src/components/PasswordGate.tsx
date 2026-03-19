@@ -42,16 +42,8 @@ export function PasswordGate({ children }: PasswordGateProps) {
   return (
     <div
       className="relative py-14 md:py-20 flex flex-col items-center justify-center overflow-hidden"
-      style={{ background: "hsl(350 30% 96%)" }}
+      style={{ background: "hsl(350 60% 92%)" }}
     >
-      {/* Dot grid */}
-      <div
-        className="absolute inset-0 pointer-events-none opacity-40"
-        style={{
-          backgroundImage: "radial-gradient(circle, hsl(350 40% 65% / 0.5) 1px, transparent 1px)",
-          backgroundSize: "26px 26px",
-        }}
-      />
       {/* Soft orb */}
       <div
         className="absolute pointer-events-none rounded-full"
