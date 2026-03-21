@@ -59,7 +59,7 @@ export const projectsData: Project[] = [
     description: "A dynamic tool to view global time zones efficiently. Designed to improve productivity and global communication.",
     category: "Frontend",
     link: "https://world-clock-responsive.replit.app/",
-    image: "https://satokogruson.github.io/img/world-clock.png"
+    image: "/images/world-clock.png"
   },
   {
     id: "weather-app",
