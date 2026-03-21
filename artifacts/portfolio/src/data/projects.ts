@@ -50,7 +50,7 @@ export const projectsData: Project[] = [
     title: "Savor the Globe",
     description: "From local favorites to global sensations, find the top five dishes that define dining around the world.",
     category: "Frontend",
-    link: "https://gruson-top-5-dishes.netlify.app/",
+    link: "https://top-5-best-food-ai-generator.replit.app",
     image: "https://satokogruson.github.io/img/savor_the_globe.png"
   },
   {
@@ -58,7 +58,7 @@ export const projectsData: Project[] = [
     title: "World Clock App",
     description: "A dynamic tool to view global time zones efficiently. Designed to improve productivity and global communication.",
     category: "Frontend",
-    link: "https://gruson-world-clock.netlify.app/",
+    link: "https://world-clock-responsive.replit.app/",
     image: "https://satokogruson.github.io/img/world-clock.png"
   },
   {
@@ -66,7 +66,7 @@ export const projectsData: Project[] = [
     title: "Weather App",
     description: "Get real-time weather updates with this highly interactive and customizable weather application.",
     category: "Frontend",
-    link: "https://gruson-weather-app.netlify.app/",
+    link: "https://Weather-app-gruson.replit.app",
     image: "https://satokogruson.github.io/img/weather-app.png"
   },
   {
