@@ -51,7 +51,7 @@ export const projectsData: Project[] = [
     description: "From local favorites to global sensations, find the top five dishes that define dining around the world.",
     category: "Frontend",
     link: "https://top-5-best-food-ai-generator.replit.app",
-    image: "https://satokogruson.github.io/img/savor_the_globe.png"
+    image: "/images/savor-the-globe.png"
   },
   {
     id: "world-clock",
