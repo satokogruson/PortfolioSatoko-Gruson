@@ -1,0 +1,14 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "w7Vzv5IRIHUUCTSdnHSqk"
+uri = "file://attached_assets/generated_images/hero-bg-blobs-v1.png"
+type = "image"
+title = "Option A — Mixed blobs & bubbles"
+
+[[outputs]]
+id = "Ph0o0Gcsp8lmCNla7OPPl"
+uri = "file://attached_assets/generated_images/hero-bg-blobs-v2.png"
+type = "image"
+title = "Option B — Large glossy spheres"
