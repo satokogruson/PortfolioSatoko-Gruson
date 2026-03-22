@@ -42,7 +42,7 @@ export function PasswordGate({ children }: PasswordGateProps) {
   return (
     <div
       className="relative py-14 md:py-20 flex flex-col items-center justify-center overflow-hidden"
-      style={{ background: "linear-gradient(to bottom, hsl(210 30% 95%) 0%, hsl(350 50% 94%) 100%)" }}
+      style={{ background: "linear-gradient(to bottom, hsl(210 45% 82%) 0%, hsl(350 50% 94%) 100%)" }}
     >
       {/* Soft orb */}
       <div
