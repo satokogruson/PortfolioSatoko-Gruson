@@ -78,7 +78,6 @@ export function PasswordGate({ children }: PasswordGateProps) {
               value={input}
               onChange={(e) => { setInput(e.target.value); setError(false); }}
               placeholder="Enter password"
-              autoFocus
               className={`w-full px-5 py-3.5 pr-12 rounded-full border text-sm bg-background/80 backdrop-blur text-foreground outline-none transition-all duration-200 ${
                 error
                   ? "border-destructive ring-2 ring-destructive/20"
