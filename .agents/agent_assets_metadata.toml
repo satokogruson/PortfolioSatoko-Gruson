@@ -12,3 +12,21 @@ id = "Ph0o0Gcsp8lmCNla7OPPl"
 uri = "file://attached_assets/generated_images/hero-bg-blobs-v2.png"
 type = "image"
 title = "Option B — Large glossy spheres"
+
+[[outputs]]
+id = "BMe2u8EwojZjYOw0-fvQZ"
+uri = "file://attached_assets/generated_images/hero-bg-modern-v1.png"
+type = "image"
+title = "Option A — Glass spheres with light refractions"
+
+[[outputs]]
+id = "1mBmCZgZ0r1AyuwTQAeGc"
+uri = "file://attached_assets/generated_images/hero-bg-modern-v2.png"
+type = "image"
+title = "Option B — Matte velvet blobs"
+
+[[outputs]]
+id = "mOTqd-sc6fNUukRiHRp2E"
+uri = "file://attached_assets/generated_images/hero-bg-modern-v3.png"
+type = "image"
+title = "Option C — Crystalline petal shapes"
