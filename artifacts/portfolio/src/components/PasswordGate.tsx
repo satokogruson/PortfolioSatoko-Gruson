@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Lock, Eye, EyeOff } from "lucide-react";
+import { Lock, Eye, EyeOff, ChevronUp } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
 
 const SESSION_KEY = "portfolio_experience_unlocked_v2";
 const CORRECT_PASSWORD = "DesignSG1210";
@@ -10,6 +11,7 @@ interface PasswordGateProps {
 
 export function PasswordGate({ children }: PasswordGateProps) {
   const [unlocked, setUnlocked] = useState(false);
+  const [expanded, setExpanded] = useState(true);
   const [input, setInput] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState(false);
@@ -26,6 +28,7 @@ export function PasswordGate({ children }: PasswordGateProps) {
     if (input === CORRECT_PASSWORD) {
       sessionStorage.setItem(SESSION_KEY, "true");
       setUnlocked(true);
+      setExpanded(true);
       setError(false);
     } else {
       setError(true);
@@ -36,7 +39,47 @@ export function PasswordGate({ children }: PasswordGateProps) {
   }
 
   if (unlocked) {
-    return <>{children}</>;
+    return (
+      <div>
+        {/* Accordion toggle bar */}
+        <div
+          className="flex items-center justify-between px-6 md:px-12 py-3 cursor-pointer select-none group"
+          style={{
+            background: "hsl(350 60% 92%)",
+            borderBottom: expanded ? "none" : "1px solid hsl(350 40% 88%)",
+          }}
+          onClick={() => setExpanded(!expanded)}
+        >
+          <span className="text-sm font-medium text-foreground/60 group-hover:text-foreground/90 transition-colors flex items-center gap-2">
+            <Lock size={13} className="text-primary" />
+            Professional Experience
+          </span>
+          <motion.div
+            animate={{ rotate: expanded ? 0 : 180 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+            className="text-foreground/50 group-hover:text-primary transition-colors"
+          >
+            <ChevronUp size={18} />
+          </motion.div>
+        </div>
+
+        {/* Collapsible content */}
+        <AnimatePresence initial={false}>
+          {expanded && (
+            <motion.div
+              key="experience-content"
+              initial={{ height: 0, opacity: 0 }}
+              animate={{ height: "auto", opacity: 1 }}
+              exit={{ height: 0, opacity: 0 }}
+              transition={{ duration: 0.4, ease: "easeInOut" }}
+              style={{ overflow: "hidden" }}
+            >
+              {children}
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </div>
+    );
   }
 
   return (
