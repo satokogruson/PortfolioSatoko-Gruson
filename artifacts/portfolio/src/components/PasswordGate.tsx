@@ -42,44 +42,41 @@ export function PasswordGate({ children }: PasswordGateProps) {
   return (
     <div
       className="relative py-24 md:py-32 flex flex-col items-center justify-center overflow-hidden"
-      style={{
-        backgroundImage: `url(${import.meta.env.BASE_URL}images/hero-bg.png)`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundColor: "hsl(350 60% 92%)",
-      }}
+      style={{ background: "hsl(210 30% 95%)" }}
     >
-      {/* Frosted glass overlay across the full section */}
-      <div
-        className="absolute inset-0"
-        style={{
-          background: "rgba(255,255,255,0.35)",
-          backdropFilter: "blur(2px)",
-          WebkitBackdropFilter: "blur(2px)",
-        }}
-      />
+      {/* Subtle colour orbs to give the glass something to refract */}
+      <div className="absolute pointer-events-none" style={{
+        width: 500, height: 500, top: "-80px", left: "-100px",
+        background: "radial-gradient(circle, hsl(350 60% 88% / 0.45) 0%, transparent 65%)",
+        filter: "blur(60px)",
+      }} />
+      <div className="absolute pointer-events-none" style={{
+        width: 400, height: 400, bottom: "-60px", right: "-80px",
+        background: "radial-gradient(circle, hsl(210 50% 82% / 0.4) 0%, transparent 65%)",
+        filter: "blur(60px)",
+      }} />
 
       {/* Glass card */}
       <div
         className={`relative z-10 max-w-md w-full mx-auto px-8 py-10 text-center rounded-3xl ${shake ? "animate-shake" : ""}`}
         style={{
-          background: "rgba(255,255,255,0.45)",
-          backdropFilter: "blur(20px)",
-          WebkitBackdropFilter: "blur(20px)",
-          border: "1px solid rgba(255,255,255,0.7)",
-          boxShadow: "0 8px 32px rgba(180,160,170,0.18), inset 0 1px 0 rgba(255,255,255,0.8)",
+          background: "rgba(255,255,255,0.4)",
+          backdropFilter: "blur(24px)",
+          WebkitBackdropFilter: "blur(24px)",
+          border: "1px solid rgba(255,255,255,0.75)",
+          boxShadow: "0 8px 40px rgba(160,170,200,0.18), inset 0 1px 0 rgba(255,255,255,0.9)",
         }}
       >
         <div
           className="w-14 h-14 rounded-full flex items-center justify-center mx-auto mb-5"
           style={{
-            background: "rgba(255,255,255,0.6)",
+            background: "rgba(255,255,255,0.55)",
             border: "1px solid rgba(255,255,255,0.8)",
-            boxShadow: "0 2px 12px rgba(180,140,160,0.15)",
           }}
         >
           <Lock size={20} className="text-foreground/60" />
         </div>
+
         <h3 className="text-2xl font-serif text-foreground mb-2">Protected Content</h3>
         <p className="text-foreground/60 text-sm mb-7 leading-relaxed">
           This section contains confidential case study work.<br />
@@ -96,11 +93,11 @@ export function PasswordGate({ children }: PasswordGateProps) {
               className={`w-full px-5 py-3.5 pr-12 rounded-full text-sm text-foreground outline-none transition-all duration-200 ${
                 error
                   ? "ring-2 ring-destructive/40"
-                  : "focus:ring-2 focus:ring-white/60"
+                  : "focus:ring-2 focus:ring-white/70"
               }`}
               style={{
-                background: "rgba(255,255,255,0.55)",
-                border: "1px solid rgba(255,255,255,0.75)",
+                background: "rgba(255,255,255,0.6)",
+                border: "1px solid rgba(255,255,255,0.8)",
                 backdropFilter: "blur(8px)",
                 WebkitBackdropFilter: "blur(8px)",
               }}
@@ -123,12 +120,8 @@ export function PasswordGate({ children }: PasswordGateProps) {
 
           <button
             type="submit"
-            className="px-8 py-3.5 rounded-full font-medium text-sm transition-all duration-300 hover:-translate-y-0.5"
-            style={{
-              background: "rgba(30,20,25,0.82)",
-              color: "#fff",
-              boxShadow: "0 4px 16px rgba(0,0,0,0.15)",
-            }}
+            className="px-8 py-3.5 rounded-full font-medium text-sm transition-all duration-300 hover:-translate-y-0.5 shadow-md hover:shadow-lg"
+            style={{ background: "rgba(30,20,25,0.82)", color: "#fff" }}
           >
             Unlock
           </button>
@@ -145,9 +138,7 @@ export function PasswordGate({ children }: PasswordGateProps) {
           75% { transform: translateX(-4px); }
           90% { transform: translateX(4px); }
         }
-        .animate-shake {
-          animation: shake 0.5s ease;
-        }
+        .animate-shake { animation: shake 0.5s ease; }
       `}</style>
     </div>
   );
