@@ -26,10 +26,14 @@ export function Navigation() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out",
-        isScrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-border shadow-sm py-4"
-          : "bg-transparent py-6"
+        isScrolled ? "py-4 shadow-sm" : "py-6"
       )}
+      style={{
+        background: "rgba(255,255,255,0.55)",
+        backdropFilter: "blur(18px)",
+        WebkitBackdropFilter: "blur(18px)",
+        borderBottom: "1px solid rgba(255,255,255,0.7)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a 
