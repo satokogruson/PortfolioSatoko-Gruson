@@ -33,8 +33,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end justify-between p-6">
            <a 
             href={project.link} 
-            target="_blank" 
-            rel="noopener noreferrer"
             className="w-12 h-12 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-black transition-colors duration-300 transform translate-y-4 group-hover:translate-y-0"
             aria-label={`View ${project.title}`}
           >
@@ -59,8 +57,6 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="mt-auto pt-6 flex items-center gap-4 border-t border-border/50">
           <a
             href={project.link}
-            target="_blank"
-            rel="noopener noreferrer"
             className="text-sm font-medium flex items-center gap-2 text-foreground hover:text-primary transition-colors"
           >
             <ExternalLink size={16} />
