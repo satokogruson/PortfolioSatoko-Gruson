@@ -60,28 +60,31 @@ export function Hero() {
       {/* Content */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full">
         <div className="max-w-3xl">
+          {/* "Hi, I'm" — appears with the name */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            transition={{ duration: 0.7, ease: "easeInOut" }}
             className="flex items-center gap-2 text-black/70 font-medium mb-6 tracking-wide uppercase text-sm"
           >
             <span>Hi, I'm</span>
           </motion.div>
 
+          {/* Name — first, no delay */}
           <motion.h1
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
+            transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-black leading-[1.1] mb-6"
           >
             Satoko <br /> Gruson.
           </motion.h1>
 
+          {/* Title — 0.3s after name */}
           <motion.h2
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
+            transition={{ duration: 0.7, ease: "easeInOut", delay: 0.3 }}
             className="text-xl md:text-2xl text-black/80 font-medium mb-4 flex flex-wrap items-center gap-x-3 gap-y-2 text-balance"
           >
             <span>Web Product Manager</span>
@@ -91,30 +94,33 @@ export function Hero() {
             <span>Frontend Developer</span>
           </motion.h2>
 
+          {/* Location — follows title */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+            transition={{ duration: 0.7, ease: "easeInOut", delay: 0.45 }}
             className="flex items-center gap-2 text-black/60 mb-8"
           >
             <MapPin size={18} className="text-black/60" />
             <span>Tokyo, Japan</span>
           </motion.div>
 
+          {/* Tagline — 0.6s after name */}
           <motion.p
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+            transition={{ duration: 0.7, ease: "easeInOut", delay: 0.6 }}
             className="text-lg text-black/70 max-w-2xl leading-relaxed mb-12 text-balance"
           >
             My multi-cultural background and a master's in Translation & Localization Management will help you broaden your target audience!{" "}
             <span className="inline-block hover:rotate-12 transition-transform duration-300">😊</span>
           </motion.p>
 
+          {/* Buttons — last */}
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
+            transition={{ duration: 0.7, ease: "easeInOut", delay: 0.8 }}
             className="flex flex-wrap items-center gap-4"
           >
             <a
