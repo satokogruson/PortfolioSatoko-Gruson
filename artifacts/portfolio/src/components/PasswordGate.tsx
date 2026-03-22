@@ -62,8 +62,8 @@ export function PasswordGate({ children }: PasswordGateProps) {
         className={`relative z-10 max-w-md w-full mx-auto px-6 text-center transition-transform ${shake ? "animate-shake" : ""}`}
         style={shake ? { animation: "shake 0.5s ease" } : {}}
       >
-        <div className="w-14 h-14 rounded-full bg-primary/15 border border-primary/25 flex items-center justify-center mx-auto mb-5">
-          <Lock size={20} className="text-primary" />
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5" style={{ background: "hsl(350 50% 72%)", boxShadow: "0 4px 18px hsl(350 50% 72% / 0.35)" }}>
+          <Lock size={24} className="text-white" strokeWidth={2.5} />
         </div>
         <h3 className="text-2xl font-serif text-foreground mb-2">Protected Content</h3>
         <p className="text-muted-foreground text-sm mb-7 leading-relaxed">
