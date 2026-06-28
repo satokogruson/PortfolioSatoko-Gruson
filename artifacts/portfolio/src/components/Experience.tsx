@@ -158,6 +158,38 @@ export function Experience() {
                 </p>
               </div>
 
+              {/* Challenge */}
+              <div className="mb-8">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />The Challenge
+                </h4>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  {[
+                    {
+                      label: "System cannot be changed",
+                      detail: "The Salesforce intake system had years of regulatory complexity baked in. No structural changes were permitted — the AI layer had to work entirely on top.",
+                    },
+                    {
+                      label: "Infrequent, high-stakes users",
+                      detail: "Most users encountered the intake flow rarely — no muscle memory, no familiarity. A missed compliance check carries legal and regulatory consequences.",
+                    },
+                    {
+                      label: "Conditional logic invisible to users",
+                      detail: "Which fields activate depends on service type, client status, and engagement size — logic users were expected to know but couldn't be expected to remember.",
+                    },
+                    {
+                      label: "Errors are not recoverable cheaply",
+                      detail: "An incorrect submission isn't a failed form — it's a missed independence check, an unreviewed SEC disclosure, or a service category that needed partner sign-off.",
+                    },
+                  ].map(({ label, detail }) => (
+                    <div key={label} className="rounded-xl bg-secondary/40 border border-border p-5">
+                      <p className="font-semibold text-foreground text-sm mb-1.5">{label}</p>
+                      <p className="text-xs text-muted-foreground leading-relaxed">{detail}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
               {/* Three phases + design principles side by side */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
 
