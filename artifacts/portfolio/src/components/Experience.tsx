@@ -162,17 +162,17 @@ export function Experience() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
 
                 {/* Phases */}
-                <div>
+                <div className="flex flex-col">
                   <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
                     <span className="w-4 h-[1px] bg-muted-foreground" />Three Sequential Gates
                   </h4>
-                  <div className="space-y-3">
+                  <div className="flex flex-col flex-1 gap-3">
                     {[
                       { phase: "Phase 1", title: "Pre-flight check", detail: "AI reads the delivery date on load. Hard block under 3 days; amber warning for 3–7 days." },
                       { phase: "Phase 2", title: "Document validation", detail: "Six edge cases checked — name mismatch, expired contract, draft filename, amendment without original." },
                       { phase: "Phase 3", title: "Service classification", detail: "AI maps contract to service parents + sub-services. Progressive disclosure by confidence. Recall over precision." },
                     ].map(({ phase, title, detail }) => (
-                      <div key={phase} className="flex gap-3 p-4 rounded-lg border border-border">
+                      <div key={phase} className="flex gap-3 p-4 rounded-lg border border-border flex-1">
                         <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-primary/10 text-primary uppercase tracking-wide shrink-0 h-fit">{phase}</span>
                         <div>
                           <p className="font-semibold text-foreground text-sm mb-0.5">{title}</p>
@@ -184,18 +184,18 @@ export function Experience() {
                 </div>
 
                 {/* Design Principles */}
-                <div>
+                <div className="flex flex-col">
                   <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
                     <span className="w-4 h-[1px] bg-muted-foreground" />Design Principles
                   </h4>
-                  <div className="space-y-3">
+                  <div className="flex flex-col flex-1 gap-3">
                     {[
                       { num: "1", title: "Construction → Confirmation", detail: "Verify AI suggestions, don't build from scratch." },
                       { num: "2", title: "Alerts earn their place", detail: "Every alert needs a severity, a reason, and a next action." },
                       { num: "3", title: "System holds the memory", detail: "Every return surfaces where you stopped and why." },
                       { num: "4", title: "Thinking vs. Recording", detail: "AI reasons. Salesforce records. They never duplicate." },
                     ].map(({ num, title, detail }) => (
-                      <div key={num} className="flex gap-3 p-4 rounded-lg border border-border">
+                      <div key={num} className="flex gap-3 p-4 rounded-lg border border-border flex-1">
                         <span className="w-6 h-6 rounded-full bg-primary/10 text-primary font-mono text-xs font-semibold flex items-center justify-center shrink-0">{num}</span>
                         <div>
                           <p className="font-semibold text-foreground text-sm mb-0.5">{title}</p>
