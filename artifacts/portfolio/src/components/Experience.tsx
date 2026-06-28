@@ -130,8 +130,8 @@ export function Experience() {
               {/* Title + meta */}
               <div className="flex flex-wrap items-start justify-between gap-6 mb-8">
                 <div>
-                  <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-2">AI Intake Navigator</h3>
-                  <p className="text-lg text-muted-foreground">AI Co-pilot for Enterprise Compliance Intake</p>
+                  <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-2">AI Assistant for Salesforce Compliance</h3>
+                  <p className="text-lg text-muted-foreground">Helping users navigate a complex compliance intake system</p>
                 </div>
                 <div className="grid grid-cols-2 gap-x-10 gap-y-3 text-sm">
                   {[
