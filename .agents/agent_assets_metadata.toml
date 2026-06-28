@@ -1,5 +1,22 @@
 uploads = []
-generated = []
+
+[[generated]]
+id = "X8b3pD0BAFazjiZb0W_OE"
+uri = "file://attached_assets/generated_images/wireframe-phase1.png"
+type = "image"
+title = "AI navigator phase 1 delivery date wireframe"
+
+[[generated]]
+id = "LsswAb-qwBB9hDHO5RC3L"
+uri = "file://attached_assets/generated_images/wireframe-phase2.png"
+type = "image"
+title = "AI navigator phase 2 document validation wireframe"
+
+[[generated]]
+id = "E-m1b5MwfuGp6309zggVs"
+uri = "file://attached_assets/generated_images/wireframe-phase3.png"
+type = "image"
+title = "AI navigator phase 3 service classification wireframe"
 
 [[outputs]]
 id = "w7Vzv5IRIHUUCTSdnHSqk"
