@@ -110,7 +110,145 @@ export function Experience() {
           </motion.p>
         </div>
 
-        {/* ── Case Study 01: Adobe Japan ─────────────────────────────── */}
+        {/* ── Case Study 01: AI Intake Navigator ─────────────────────── */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-24"
+        >
+          <div className="rounded-2xl border border-border bg-card overflow-hidden">
+
+            <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 01 / 04</span>
+              <span className="text-sm text-background/70">Exploratory · Portfolio Case Study · 2026</span>
+            </div>
+
+            <div className="p-8 md:p-12">
+
+              {/* Title + meta */}
+              <div className="flex flex-wrap items-start justify-between gap-6 mb-8">
+                <div>
+                  <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-2">AI Intake Navigator</h3>
+                  <p className="text-lg text-muted-foreground">AI Co-pilot for Enterprise Compliance Intake</p>
+                </div>
+                <div className="grid grid-cols-2 gap-x-10 gap-y-3 text-sm">
+                  {[
+                    ["Role", "UX Designer & Product Thinker"],
+                    ["Type", "Exploratory / Portfolio"],
+                    ["Domain", "Enterprise Compliance Intake"],
+                    ["Platform", "Salesforce + AI Navigator Layer"],
+                  ].map(([label, value]) => (
+                    <div key={label}>
+                      <span className="text-xs uppercase tracking-wider text-muted-foreground block mb-1">{label}</span>
+                      <span className="text-foreground/90 font-medium">{value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Overview */}
+              <div className="mb-8">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-3 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Overview
+                </h4>
+                <p className="text-foreground/80 leading-relaxed text-sm">
+                  A compliance intake system at a global consulting firm had grown over years of regulatory changes — fields and logic bolted on without ever being redesigned. The Salesforce system itself could not be touched. The solution: an AI navigator layer that sits alongside the existing UI, reads the uploaded contract, and handles all complexity before the user opens a single field. The AI absorbs the cognitive load; the user confirms, not constructs.
+                </p>
+              </div>
+
+              {/* Three phases + design principles side by side */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+
+                {/* Phases */}
+                <div>
+                  <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
+                    <span className="w-4 h-[1px] bg-muted-foreground" />Three Sequential Gates
+                  </h4>
+                  <div className="space-y-3">
+                    {[
+                      { phase: "Phase 1", title: "Pre-flight check", detail: "AI reads the delivery date on load. Hard block under 3 days; amber warning for 3–7 days." },
+                      { phase: "Phase 2", title: "Document validation", detail: "Six edge cases checked — name mismatch, expired contract, draft filename, amendment without original." },
+                      { phase: "Phase 3", title: "Service classification", detail: "AI maps contract to service parents + sub-services. Progressive disclosure by confidence. Recall over precision." },
+                    ].map(({ phase, title, detail }) => (
+                      <div key={phase} className="flex gap-3 p-4 rounded-lg border border-border">
+                        <span className="text-xs font-medium px-2.5 py-1 rounded-full bg-primary/10 text-primary uppercase tracking-wide shrink-0 h-fit">{phase}</span>
+                        <div>
+                          <p className="font-semibold text-foreground text-sm mb-0.5">{title}</p>
+                          <p className="text-xs text-muted-foreground leading-relaxed">{detail}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Design Principles */}
+                <div>
+                  <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
+                    <span className="w-4 h-[1px] bg-muted-foreground" />Design Principles
+                  </h4>
+                  <div className="space-y-3">
+                    {[
+                      { num: "1", title: "Construction → Confirmation", detail: "Verify AI suggestions, don't build from scratch." },
+                      { num: "2", title: "Alerts earn their place", detail: "Every alert needs a severity, a reason, and a next action." },
+                      { num: "3", title: "System holds the memory", detail: "Every return surfaces where you stopped and why." },
+                      { num: "4", title: "Thinking vs. Recording", detail: "AI reasons. Salesforce records. They never duplicate." },
+                    ].map(({ num, title, detail }) => (
+                      <div key={num} className="flex gap-3 p-4 rounded-lg border border-border">
+                        <span className="w-6 h-6 rounded-full bg-primary/10 text-primary font-mono text-xs font-semibold flex items-center justify-center shrink-0">{num}</span>
+                        <div>
+                          <p className="font-semibold text-foreground text-sm mb-0.5">{title}</p>
+                          <p className="text-xs text-muted-foreground">{detail}</p>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+
+              {/* Alert hierarchy — compact */}
+              <div className="mb-8">
+                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
+                  <span className="w-4 h-[1px] bg-muted-foreground" />Alert Hierarchy
+                </h4>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                  {[
+                    { level: "Hard block", colour: "bg-red-100 text-red-700 border-red-200", dot: "bg-red-500", trigger: "Name mismatch · Expired contract · &lt;3 days" },
+                    { level: "Soft block", colour: "bg-amber-50 text-amber-700 border-amber-200", dot: "bg-amber-500", trigger: "Draft document · Amendment without original" },
+                    { level: "Warning", colour: "bg-yellow-50 text-yellow-700 border-yellow-200", dot: "bg-yellow-400", trigger: "Old document · Filename flags · 3–7 days" },
+                    { level: "Info", colour: "bg-blue-50 text-blue-700 border-blue-200", dot: "bg-blue-400", trigger: "Low confidence suggestions" },
+                  ].map(({ level, colour, dot, trigger }) => (
+                    <div key={level} className={`rounded-lg border p-4 ${colour}`}>
+                      <div className="flex items-center gap-2 mb-2">
+                        <span className={`w-2 h-2 rounded-full ${dot} shrink-0`} />
+                        <span className="font-semibold text-xs uppercase tracking-wide">{level}</span>
+                      </div>
+                      <p className="text-xs leading-relaxed opacity-80" dangerouslySetInnerHTML={{ __html: trigger }} />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Reflection + Figma link */}
+              <div className="rounded-xl bg-secondary/30 border-l-4 border-primary p-6 flex flex-wrap items-center justify-between gap-4">
+                <p className="text-foreground/80 leading-relaxed text-sm max-w-2xl">
+                  Compliance UX requires designing for error prevention, not just efficiency. The right question is not <em>how fast</em> can the user complete this — it is <em>how certain</em> can we be that what they submit is correct.
+                </p>
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-border text-sm font-medium text-foreground hover:bg-secondary transition-colors shrink-0"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  View wireframes on Figma
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </motion.div>
+
+        {/* ── Case Study 02: Adobe Japan ─────────────────────────────── */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -122,7 +260,7 @@ export function Experience() {
 
             {/* Top bar */}
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 01 / 04</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 02 / 04</span>
               <a href="https://www.adobe.com/jp/" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-sm text-background/70 hover:text-background transition-colors">
                 adobe.com/jp <ArrowUpRight size={14} />
@@ -533,7 +671,7 @@ export function Experience() {
           <div className="rounded-2xl border border-border bg-card overflow-hidden">
 
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 02 / 04</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 03 / 04</span>
               <span className="text-sm text-background/70">Freelance</span>
             </div>
 
@@ -644,7 +782,7 @@ export function Experience() {
           <div className="rounded-2xl border border-border bg-card overflow-hidden">
 
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 03 / 04</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 04 / 04</span>
               <span className="text-sm text-background/70">Freelance · Austria</span>
             </div>
 
@@ -767,236 +905,6 @@ export function Experience() {
                 <p className="text-foreground/80 leading-relaxed text-sm mt-3">
                   Key learning: designing for a dual audience requires disciplined information architecture decisions from day one. Working directly with the client through each design phase ensured the output matched both their business goals and the real needs of their users.
                 </p>
-              </div>
-
-            </div>
-          </div>
-        </motion.div>
-
-        {/* ── Case Study 04: AI Intake Navigator ─────────────────────── */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="mb-24"
-        >
-          <div className="rounded-2xl border border-border bg-card overflow-hidden">
-
-            {/* Top bar */}
-            <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 04 / 04</span>
-              <span className="text-sm text-background/70">Exploratory · Portfolio Case Study · 2026</span>
-            </div>
-
-            <div className="p-8 md:p-12">
-
-              {/* Title + meta */}
-              <div className="flex flex-wrap items-start justify-between gap-6 mb-10">
-                <div>
-                  <h3 className="text-3xl md:text-4xl font-serif text-foreground mb-2">AI Intake Navigator</h3>
-                  <p className="text-lg text-muted-foreground">AI Co-pilot for Enterprise Compliance Intake</p>
-                </div>
-                <div className="grid grid-cols-2 gap-x-10 gap-y-3 text-sm">
-                  {[
-                    ["Role", "UX Designer & Product Thinker"],
-                    ["Type", "Exploratory / Portfolio"],
-                    ["Domain", "Enterprise Compliance Intake"],
-                    ["Platform", "Salesforce + AI Navigator Layer"],
-                  ].map(([label, value]) => (
-                    <div key={label}>
-                      <span className="text-xs uppercase tracking-wider text-muted-foreground block mb-1">{label}</span>
-                      <span className="text-foreground/90 font-medium">{value}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Overview */}
-              <div className="mb-10">
-                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-4 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />Overview & Challenge
-                </h4>
-                <p className="text-foreground/80 leading-relaxed mb-5 text-sm">
-                  Enterprise consulting firms rely on Salesforce-based compliance intake systems that have grown over years — fields and tabs bolted on for each new regulation, never redesigned holistically. The result is a UI that reflects internal team structures rather than how users actually think. This project explores the UX logic and AI assistant design for a document-driven intake tool built on one core constraint: the Salesforce system itself cannot be changed.
-                </p>
-                <p className="text-foreground/80 leading-relaxed mb-6 text-sm">
-                  The AI absorbs the complexity so the user never has to see it. By the time a user opens Salesforce to enter data, every decision has already been made and verified. In compliance intake, the cost of an error is not a failed form — it is a missed independence check, an unreviewed SEC disclosure, or a service category that should have triggered partner sign-off.
-                </p>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {[
-                    { label: "System cannot be changed", detail: "The AI navigator works alongside Salesforce without touching the underlying structure — the solution sits on top, not inside." },
-                    { label: "High error stakes", detail: "Missed compliance checks carry legal and regulatory consequences — UX must prioritise prevention over efficiency." },
-                    { label: "Infrequent users", detail: "Many users encounter the intake flow rarely. No muscle memory to rely on — every session must be self-explanatory." },
-                    { label: "Complex conditional logic", detail: "Which fields activate depends on service type, client status, and engagement size — the AI handles this invisibly." },
-                  ].map(({ label, detail }) => (
-                    <div key={label} className="rounded-xl bg-secondary/50 p-5 border border-border">
-                      <h5 className="font-medium text-foreground mb-2 text-sm">{label}</h5>
-                      <p className="text-sm text-muted-foreground leading-relaxed">{detail}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Design Principles */}
-              <div className="mb-10">
-                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />Design Principles
-                </h4>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  {[
-                    { num: "1", title: "Construction → Confirmation", detail: "The user's job is to verify what the AI suggests, not build selections from scratch. Cognitive load shifts to the system." },
-                    { num: "2", title: "Alerts earn their place", detail: "Every alert must have a severity level, a reason, and a next action. An alert with no next action is just noise." },
-                    { num: "3", title: "The system holds the memory", detail: "Users should never need to remember where they left off. Every return surfaces context automatically." },
-                    { num: "4", title: "Thinking vs. Recording", detail: "The assistant does the reasoning. Salesforce does the recording. They never duplicate each other." },
-                  ].map(({ num, title, detail }) => (
-                    <div key={num} className="flex gap-4 p-5 rounded-xl border border-border">
-                      <span className="w-8 h-8 rounded-full bg-primary/10 text-primary font-mono text-sm font-semibold flex items-center justify-center shrink-0">{num}</span>
-                      <div>
-                        <p className="font-semibold text-foreground text-sm mb-1">{title}</p>
-                        <p className="text-sm text-muted-foreground leading-relaxed">{detail}</p>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Three Phases */}
-              <div className="mb-10">
-                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-6 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />A Three-Phase AI Navigator
-                </h4>
-                <p className="text-sm text-foreground/70 leading-relaxed mb-6">
-                  The solution is structured as three sequential gates. No phase begins until the previous one is fully resolved — errors are caught at the earliest possible moment before they compound.
-                </p>
-
-                {/* Phase flow */}
-                <div className="flex flex-wrap items-center gap-2 mb-8 text-sm font-medium text-muted-foreground">
-                  {["Phase 1 — Pre-flight check", "→", "Phase 2 — Document validation", "→", "Phase 3 — Service classification"].map((s, i) => (
-                    <span key={i} className={s === "→" ? "text-muted-foreground/40" : "px-3 py-1.5 rounded-full bg-primary/8 text-primary text-xs"}>{s}</span>
-                  ))}
-                </div>
-
-                {[
-                  {
-                    phase: "Phase 1",
-                    title: "Delivery Date Check",
-                    img: "/images/ai-navigator/phase1.png",
-                    alt: "Phase 1 wireframe — delivery date hard block alert",
-                    body: "The AI reads the delivery start date on session load and calculates days remaining. Two thresholds trigger different responses — a hard block under 3 days (floating alert anchored to the date field + assistant message with two choices), and an amber warning for 3–7 days that persists but does not block.",
-                    detail: "User story: Sarah opens an intake without noticing her manager set delivery for tomorrow. The assistant immediately surfaces a floating panel and offers to pause the session — saving state with the reason captured and a pre-drafted message ready for her manager.",
-                  },
-                  {
-                    phase: "Phase 2",
-                    title: "Document Validation",
-                    img: "/images/ai-navigator/phase2.png",
-                    alt: "Phase 2 wireframe — document upload validation",
-                    body: "The AI treats the uploaded document as the source of truth and validates it against six edge cases: wrong document type, multiple documents with overlapping dates, filename containing 'draft', client name mismatch (hard block), expired contract, and amendment without original. The user declares document type before upload — priming them to think critically before the AI reads.",
-                    detail: "Design decision: document type is declared before upload, not detected after. This sets expectation rather than delivers surprise — and means the confidence level for all subsequent AI suggestions is established from the start.",
-                  },
-                  {
-                    phase: "Phase 3",
-                    title: "Service Classification",
-                    img: "/images/ai-navigator/phase3.png",
-                    alt: "Phase 3 wireframe — service classification progressive disclosure",
-                    body: "Once the document passes validation, the AI maps contract content to service parents and sub-services. Progressive disclosure presents information in four layers: summary card → high confidence expanded → lower confidence collapsed → compliance flags always visible but visually separated.",
-                    detail: "The AI favours recall over precision. In compliance, omission is more costly than over-suggestion. Lower confidence suggestions are clearly marked — a suggestion that gets deselected costs two seconds; a missed compliance category costs far more.",
-                  },
-                ].map(({ phase, title, img, alt, body, detail }) => (
-                  <div key={phase} className="mb-8 rounded-xl border border-border overflow-hidden">
-                    <div className="px-6 py-4 border-b border-border flex items-center gap-3 bg-secondary/30">
-                      <span className="text-xs font-medium px-3 py-1 rounded-full bg-primary/10 text-primary uppercase tracking-wide">{phase}</span>
-                      <h5 className="font-semibold text-foreground text-sm">{title}</h5>
-                    </div>
-                    <div className="p-6">
-                      <div className="rounded-lg overflow-hidden border border-border mb-5 bg-secondary/20">
-                        <div className="bg-secondary/40 px-4 py-2 border-b border-border flex items-center gap-2">
-                          <span className="w-2.5 h-2.5 rounded-full bg-border" />
-                          <span className="w-2.5 h-2.5 rounded-full bg-border" />
-                          <span className="w-2.5 h-2.5 rounded-full bg-border" />
-                          <span className="text-xs text-muted-foreground ml-2 font-mono">AI Navigator — {title}</span>
-                        </div>
-                        <img src={img} alt={alt} className="w-full h-auto block" />
-                      </div>
-                      <p className="text-sm text-foreground/80 leading-relaxed mb-3">{body}</p>
-                      <p className="text-sm text-muted-foreground leading-relaxed italic border-l-2 border-primary/30 pl-4">{detail}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
-              {/* Alert Hierarchy */}
-              <div className="mb-10">
-                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />Alert Hierarchy — Four Levels
-                </h4>
-                <div className="space-y-3">
-                  {[
-                    { level: "Hard block", colour: "bg-red-500", trigger: "Client mismatch, expired contract, <3 days to delivery", behaviour: "Red, centre screen, cannot dismiss without resolving" },
-                    { level: "Soft block", colour: "bg-amber-500", trigger: "Draft document, amendment without original", behaviour: "Amber, can proceed only with explicit acknowledgement — decision is logged" },
-                    { level: "Warning", colour: "bg-yellow-400", trigger: "Old document, filename mismatch, 3–7 days", behaviour: "Yellow, informational — keeps user aware without interrupting current task" },
-                    { level: "Info", colour: "bg-blue-400", trigger: "Low confidence suggestions", behaviour: "Blue, visible but not alarming — signals uncertainty without triggering dismissal" },
-                  ].map(({ level, colour, trigger, behaviour }) => (
-                    <div key={level} className="flex gap-4 items-start p-4 rounded-lg border border-border">
-                      <span className={`w-2 h-2 rounded-full ${colour} mt-1.5 shrink-0`} />
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-1 w-full">
-                        <span className="font-semibold text-foreground text-sm">{level}</span>
-                        <span className="text-sm text-muted-foreground">{trigger}</span>
-                        <span className="text-sm text-foreground/70">{behaviour}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Key design decisions */}
-              <div className="mb-10">
-                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-5 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />Key Design Decisions & Tradeoffs
-                </h4>
-                <div className="space-y-3">
-                  {[
-                    { label: "Dual alert placement — field and chat", detail: "Alternative: single modal only. Reason: users scan different areas at different moments — one location gets missed." },
-                    { label: "Document type declared before upload", detail: "Alternative: AI detects type after upload. Reason: primes user to think critically before the AI reads, sets expectation rather than delivers surprise." },
-                    { label: "Progressive disclosure by confidence", detail: "Alternative: show all suggestions at once. Reason: prevents congestion — most important decisions made first without noise competing for attention." },
-                    { label: "Pause captures reason, not just progress", detail: "Alternative: save position only. Reason: returning users need context, not just a bookmark — reason enables the resume card narrative." },
-                    { label: "More suggestions rather than fewer", detail: "Alternative: precision-focused suggestions only. Reason: omission is more costly than over-suggestion in compliance — high recall is the right bias." },
-                  ].map(({ label, detail }) => (
-                    <div key={label} className="flex gap-4 p-4 rounded-lg border border-border">
-                      <span className="w-1.5 h-1.5 rounded-full bg-primary mt-2 shrink-0" />
-                      <div>
-                        <span className="font-semibold text-foreground text-sm">{label} — </span>
-                        <span className="text-sm text-foreground/70">{detail}</span>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {/* Reflection + download */}
-              <div className="rounded-xl bg-secondary/30 border-l-4 border-primary p-6 md:p-8 mb-6">
-                <h4 className="text-xs font-mono uppercase tracking-widest text-muted-foreground mb-3 flex items-center gap-2">
-                  <span className="w-4 h-[1px] bg-muted-foreground" />Reflection
-                </h4>
-                <p className="text-foreground/80 leading-relaxed text-sm mb-3">
-                  AI assistants inherit the confusion of the systems they sit on top of. Knowledge engineering — documenting every field, every rule, every conditional — is the hard work. The AI layer is the easier part. Compliance UX requires designing for error prevention, not just efficiency. The right question is not how fast can the user complete this — it is how certain can we be that what they submit is correct.
-                </p>
-                <p className="text-foreground/80 leading-relaxed text-sm">
-                  This project sits at the intersection of AI product thinking, compliance domain expertise, and enterprise UX maturity — designing AI assistants that reduce cognitive load in high-stakes regulated environments.
-                </p>
-              </div>
-
-              {/* Download CTA */}
-              <div className="flex items-center gap-4 flex-wrap">
-                <a
-                  href="/downloads/AI-Intake-Navigator-Case-Study.docx"
-                  download
-                  className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-foreground text-background text-sm font-medium hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
-                >
-                  <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.5 10.5L3.5 6.5H6V1H9V6.5H11.5L7.5 10.5Z" fill="currentColor"/><path d="M2 12H13V14H2V12Z" fill="currentColor"/></svg>
-                  Download Full Case Study
-                </a>
-                <span className="text-xs text-muted-foreground">.docx · Full decision tree, appendix & session logic</span>
               </div>
 
             </div>
