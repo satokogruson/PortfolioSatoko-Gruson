@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, MapPin } from "lucide-react";
+import { ArrowDown, Figma, MapPin } from "lucide-react";
 
 export function Hero() {
   return (
@@ -87,11 +87,11 @@ export function Hero() {
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.3 }}
             className="text-xl md:text-2xl text-black/80 font-medium mb-4 flex flex-wrap items-center gap-x-3 gap-y-2 text-balance"
           >
-            <span>Web Product Manager</span>
+            <span>Digital Product Manager</span>
+            <span className="text-black/30 hidden sm:inline">•</span>
+            <span>Web UX &amp; Content Specialist</span>
             <span className="text-black/30 hidden sm:inline">•</span>
             <span>UI/UX Designer</span>
-            <span className="text-black/30 hidden sm:inline">•</span>
-            <span>Frontend Developer</span>
           </motion.h2>
 
           {/* Location — follows title */}
@@ -113,8 +113,26 @@ export function Hero() {
             className="text-lg text-black/70 max-w-2xl leading-relaxed mb-12 text-balance"
           >
             My multi-cultural background and a master's in Translation & Localization Management will help you broaden your target audience!{" "}
-            <span className="inline-block hover:rotate-12 transition-transform duration-300">😊</span>
           </motion.p>
+
+          {/* Figma capability — surfaced early for recruiter review */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, ease: "easeInOut", delay: 0.7 }}
+            className="mb-10 max-w-2xl rounded-2xl border border-black/15 bg-white/40 px-5 py-4 backdrop-blur-sm"
+            data-testid="text-figma-experience"
+          >
+            <div className="flex items-start gap-3">
+              <Figma size={19} className="mt-0.5 shrink-0 text-black/70" />
+              <div>
+                <p className="text-sm font-semibold text-black/80">Figma-led product design</p>
+                <p className="mt-1 text-sm leading-relaxed text-black/65">
+                  Information architecture, user flows, wireframes, UI design, prototypes, and developer handoff.
+                </p>
+              </div>
+            </div>
+          </motion.div>
 
           {/* Buttons — last */}
           <motion.div
@@ -135,6 +153,13 @@ export function Hero() {
               className="w-52 flex items-center justify-center px-8 py-4 rounded-full font-medium whitespace-nowrap text-black border border-black/30 hover:bg-black/8 transition-colors duration-300"
             >
               More about me
+            </a>
+            <a
+              href={`${import.meta.env.BASE_URL}ja`}
+              className="w-52 flex items-center justify-center px-8 py-4 rounded-full font-medium whitespace-nowrap text-black border border-black/30 hover:bg-black/8 transition-colors duration-300"
+              data-testid="link-japanese-portfolio"
+            >
+              日本語で見る
             </a>
           </motion.div>
         </div>

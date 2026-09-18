@@ -66,6 +66,13 @@ export function Navigation() {
           >
             Let's Talk
           </a>
+          <a
+            href={`${import.meta.env.BASE_URL}ja`}
+            className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
+            data-testid="link-japanese-navigation"
+          >
+            日本語
+          </a>
         </nav>
 
         {/* Mobile Toggle */}
@@ -102,6 +109,14 @@ export function Navigation() {
               className="mt-4 px-6 py-3 rounded-full text-center font-medium bg-primary text-primary-foreground"
             >
               Let's Talk
+            </a>
+            <a
+              href={`${import.meta.env.BASE_URL}ja`}
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-lg font-medium text-foreground hover:text-primary transition-colors"
+              data-testid="link-japanese-mobile-navigation"
+            >
+              日本語
             </a>
           </motion.nav>
         )}

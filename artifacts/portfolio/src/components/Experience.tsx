@@ -310,7 +310,7 @@ export function Experience() {
                 <div className="grid grid-cols-2 gap-x-10 gap-y-3 text-sm">
                   {[
                     ["Role", "Web Product Manager (Contract)"],
-                    ["Period", "January 2025 – Present"],
+                    ["Period", "January 2025 – May 2026"],
                     ["Scope", "Homepage · Catalogue · Plans page · Firefly page · Creative Cloud Pro · Campaign pages"],
                     ["Tools", "Adobe Analytics · Contentsquare · Figma · CMS · A/B testing"],
                   ].map(([label, value]) => (
