@@ -87,11 +87,11 @@ export function HeroJa() {
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.3 }}
             className="text-xl md:text-2xl text-black/80 font-medium mb-4 flex flex-wrap items-center gap-x-3 gap-y-2 text-balance"
           >
-            <span>Webプロダクトマネージャー</span>
+            <span>デジタルプロダクトマネージャー</span>
+            <span className="text-black/30 hidden sm:inline">•</span>
+            <span>Web UX&amp;コンテンツスペシャリスト</span>
             <span className="text-black/30 hidden sm:inline">•</span>
             <span>UI/UXデザイナー</span>
-            <span className="text-black/30 hidden sm:inline">•</span>
-            <span>フロントエンド開発者</span>
           </motion.h2>
 
           {/* Location */}
