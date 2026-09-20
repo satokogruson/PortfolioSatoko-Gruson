@@ -60,14 +60,14 @@ export function HeroJa() {
       {/* Content */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full">
         <div className="max-w-3xl">
-          {/* Portfolio introduction */}
+          {/* Introduction */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className="flex items-center gap-2 text-black/70 font-medium mb-6 tracking-wide uppercase text-sm"
           >
-            <span>Portfolio introduction · 日本語版</span>
+            <span>はじめまして、</span>
           </motion.div>
 
           {/* Name */}
@@ -77,19 +77,21 @@ export function HeroJa() {
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-black leading-[1.1] mb-6"
           >
-            Satoko <br /> Gruson.
+            サトコ・<br />グルソンです。
           </motion.h1>
 
-          {/* Title - using the recruiter-focused positioning */}
+          {/* Professional titles */}
           <motion.h2
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.3 }}
             className="text-xl md:text-2xl text-black/80 font-medium mb-4 flex flex-wrap items-center gap-x-3 gap-y-2 text-balance"
           >
-            <span>Digital Product Manager</span>
+            <span>Webプロダクトマネージャー</span>
             <span className="text-black/30 hidden sm:inline">•</span>
-            <span>Web UX &amp; コンテンツスペシャリスト</span>
+            <span>UI/UXデザイナー</span>
+            <span className="text-black/30 hidden sm:inline">•</span>
+            <span>フロントエンド開発者</span>
           </motion.h2>
 
           {/* Location */}
@@ -100,7 +102,7 @@ export function HeroJa() {
             className="flex items-center gap-2 text-black/60 mb-8"
           >
             <MapPin size={18} className="text-black/60" />
-            <span>東京 (Tokyo, Japan)</span>
+            <span>東京</span>
           </motion.div>
 
           {/* Tagline */}
@@ -110,7 +112,7 @@ export function HeroJa() {
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.6 }}
             className="text-lg text-black/70 max-w-2xl leading-relaxed mb-12 text-balance"
           >
-            日本市場向けのUX、コンテンツ設計、ローカライゼーション、データ分析を通じて、グローバルブランドのデジタル体験を改善しています。多文化なバックグラウンドと翻訳・ローカリゼーションマネジメントの修士号を活かし、ターゲット層の拡大に貢献します。
+            多文化的なバックグラウンドと、翻訳・ローカライゼーションマネジメントの修士号を活かし、貴社のターゲットオーディエンスを世界へ広げるお手伝いをします😊
           </motion.p>
 
           {/* Figma capability — surfaced early for recruiter review */}
@@ -143,14 +145,14 @@ export function HeroJa() {
               href="#experience"
               className="group w-64 flex items-center justify-center gap-3 px-8 py-4 bg-black text-white rounded-full font-medium whitespace-nowrap shadow-lg shadow-black/20 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
             >
-              ケーススタディを見る
+              実績を見る
               <ArrowDown size={18} className="group-hover:translate-y-1 transition-transform duration-300" />
             </a>
             <a
               href="#about"
               className="w-52 flex items-center justify-center px-8 py-4 rounded-full font-medium whitespace-nowrap text-black border border-black/30 hover:bg-black/8 transition-colors duration-300"
             >
-              経歴・スキル
+              プロフィールを見る
             </a>
             <a
               href={`${import.meta.env.BASE_URL}`}

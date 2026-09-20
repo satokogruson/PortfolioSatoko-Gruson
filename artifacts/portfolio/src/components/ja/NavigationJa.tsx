@@ -7,7 +7,7 @@ const navLinks = [
   { name: "ホーム", href: "#top" },
   { name: "ケーススタディ", href: "#experience" },
   { name: "プロジェクト", href: "#projects" },
-  { name: "経歴・スキル", href: "#about" },
+  { name: "プロフィール", href: "#about" },
 ];
 
 export function NavigationJa() {

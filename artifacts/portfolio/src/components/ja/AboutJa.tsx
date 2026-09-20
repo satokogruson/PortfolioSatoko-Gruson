@@ -19,34 +19,34 @@ export function AboutJa() {
           >
             <div className="inline-flex items-center gap-2 text-primary font-medium mb-6 uppercase tracking-wider text-sm">
               <span className="w-8 h-[1px] bg-primary"></span>
-              自己紹介
+              プロフィール
             </div>
             
             <h2 className="text-4xl md:text-5xl font-serif text-foreground mb-8 leading-tight">
-              デザインとテクノロジーで <br className="hidden md:block"/>
-              <span className="italic text-primary">文化の架け橋になる。</span>
+              デザインとテクノロジーで、<br className="hidden md:block"/>
+              <span className="italic text-primary">文化をつなぐ。</span>
             </h2>
             
             <div className="space-y-6 text-lg text-foreground/80 leading-relaxed text-balance">
               <p>
-                東京を拠点に、Webプロダクトマネージャー、UI/UXデザイナー、そしてフロントエンド開発者として、デジタルプロダクトが単に「作られる」だけでなく、「目的を持って創り出される」ための多角的な役割を担っています。
+                東京を拠点に、Webプロダクトマネージャー、UI/UXデザイナー、フロントエンド開発者として複数の役割を担い、デジタルプロダクトを「作る」だけでなく「意図を持って形にする」ことを大切にしています。
               </p>
               <p>
-                多文化なバックグラウンドと「翻訳・ローカリゼーションマネジメント」の修士号を組み合わせることで、ユーザー体験に対する独自のアプローチを持っています。ただインターフェースを構築するだけでなく、ビジネスの目標を直感的な体験へと翻訳し、グローバルに響くデザインを通じて、ブランドがターゲット層を自然に広げられるよう支援します。
+                多文化的なバックグラウンドと、翻訳・ローカライゼーションマネジメントの修士号が、ユーザー体験に対する独自の視点を与えてくれます。単にインターフェースを作るのではなく、ビジネスゴールを世界に通用する直感的な体験へと「翻訳」し、ブランドがターゲットオーディエンスを無理なく広げられるよう支援しています。
               </p>
               <p>
-                Figmaでのクリーンなユーザーフローの設計、Reactを用いたレスポンシブなコンポーネントの実装、そしてプロダクトのライフサイクル管理に至るまで、創造性と論理性が交差する領域に情熱を注いでいます。
+                Figmaで洗練されたユーザーフローを設計するときも、Reactでレスポンシブなコンポーネントを実装するときも、プロダクトのライフサイクルをマネジメントするときも——私が一番力を発揮できるのは、創造性とロジックが交わる場所です。
               </p>
             </div>
 
             <div className="mt-10 pt-10 border-t border-border/50 grid grid-cols-2 gap-8">
               <div>
-                <h4 className="font-serif text-2xl text-foreground mb-2">3+</h4>
-                <p className="text-sm text-muted-foreground uppercase tracking-wider">年の経験</p>
+                <h4 className="font-serif text-2xl text-foreground mb-2">3年以上</h4>
+                <p className="text-sm text-muted-foreground uppercase tracking-wider">実務経験</p>
               </div>
               <div>
-                <h4 className="font-serif text-2xl text-foreground mb-2">10+</h4>
-                <p className="text-sm text-muted-foreground uppercase tracking-wider">完了プロジェクト</p>
+                <h4 className="font-serif text-2xl text-foreground mb-2">10件以上</h4>
+                <p className="text-sm text-muted-foreground uppercase tracking-wider">プロジェクト実績</p>
               </div>
             </div>
           </motion.div>
