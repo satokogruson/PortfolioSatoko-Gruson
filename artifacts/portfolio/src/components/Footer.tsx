@@ -9,7 +9,7 @@ export function Footer() {
         
         <div className="text-center md:text-left">
           <a href="#top" className="font-serif text-3xl font-semibold tracking-wide text-background mb-4 inline-block">
-            Satoko Gruson.
+            Satoko Gruson
           </a>
           <p className="text-background/60 max-w-sm text-balance">
             Digital Product Manager, UI/UX Designer, Web UX &amp; Content Specialist. Based in Tokyo.

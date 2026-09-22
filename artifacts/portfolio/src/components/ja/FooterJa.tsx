@@ -10,7 +10,7 @@ export function FooterJa() {
         
         <div className="text-center md:text-left">
           <a href="#top" className="font-serif text-3xl font-semibold tracking-wide text-background mb-4 inline-block">
-            サトコ・グルソン。
+            グルソン聡子
           </a>
           <p className="text-background/60 max-w-sm text-balance">
             デジタルプロダクトマネージャー、UI/UXデザイナー、Web UX&amp;コンテンツスペシャリスト。東京を拠点に活動しています。
