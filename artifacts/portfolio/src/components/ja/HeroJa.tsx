@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, MapPin } from "lucide-react";
+import { ArrowDown } from "lucide-react";
 
 export function HeroJa() {
   return (
@@ -67,7 +67,7 @@ export function HeroJa() {
             transition={{ duration: 0.7, ease: "easeInOut" }}
             className="flex items-center justify-center gap-2 text-black/70 font-medium mb-6 tracking-wide uppercase text-sm"
           >
-            <span>はじめまして、</span>
+            <span>東京を拠点に活動</span>
           </motion.div>
 
           {/* Name */}
@@ -75,9 +75,9 @@ export function HeroJa() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-black leading-[1.1] mb-6"
+            className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-black leading-[1.1] mb-6 whitespace-nowrap"
           >
-            サトコ・<br />グルソンです。
+            サトコ・グルソン
           </motion.h1>
 
           {/* Professional titles */}
@@ -94,23 +94,12 @@ export function HeroJa() {
             <span>UI/UXデザイナー</span>
           </motion.h2>
 
-          {/* Location */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeInOut", delay: 0.45 }}
-            className="flex items-center justify-center gap-2 text-black/60 mb-8"
-          >
-            <MapPin size={18} className="text-black/60" />
-            <span>東京</span>
-          </motion.div>
-
           {/* Tagline */}
           <motion.p
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.6 }}
-            className="text-lg text-black/70 max-w-2xl mx-auto leading-relaxed mb-12 text-balance"
+            className="text-lg text-black/70 max-w-2xl mx-auto leading-relaxed mt-8 mb-12 text-balance"
           >
             多文化的なバックグラウンドと、翻訳・ローカライゼーションマネジメントの修士号を活かし、貴社のターゲットオーディエンスを世界へ広げるお手伝いをします😊
           </motion.p>
