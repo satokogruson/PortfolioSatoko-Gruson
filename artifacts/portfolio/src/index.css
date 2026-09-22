@@ -305,3 +305,31 @@ html {
     text-wrap: balance;
   }
 }
+
+/* Japanese copy needs natural glyph spacing and language-aware wrapping.
+   Scope these rules to /ja so the English typography remains unchanged. */
+.japanese-typography {
+  line-break: strict;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  font-kerning: normal;
+  font-variant-east-asian: proportional-width;
+}
+
+.japanese-typography p,
+.japanese-typography h1,
+.japanese-typography h2,
+.japanese-typography h3,
+.japanese-typography h4,
+.japanese-typography h5,
+.japanese-typography h6,
+.japanese-typography a,
+.japanese-typography button,
+.japanese-typography span {
+  letter-spacing: normal;
+}
+
+.japanese-typography .text-balance {
+  text-wrap: wrap;
+  text-wrap: pretty;
+}

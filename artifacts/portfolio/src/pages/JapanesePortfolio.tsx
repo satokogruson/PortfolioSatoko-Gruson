@@ -28,7 +28,10 @@ export default function JapanesePortfolio() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background font-sans selection:bg-primary/30 selection:text-foreground">
+    <div
+      lang="ja"
+      className="japanese-typography min-h-screen bg-background font-sans selection:bg-primary/30 selection:text-foreground"
+    >
       <NavigationJa />
       
       <main>
