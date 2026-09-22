@@ -135,13 +135,6 @@ export function Hero() {
             >
               More about me
             </a>
-            <a
-              href={`${import.meta.env.BASE_URL}ja`}
-              className="w-52 flex items-center justify-center px-8 py-4 rounded-full font-medium whitespace-nowrap text-black border border-black/30 hover:bg-black/8 transition-colors duration-300"
-              data-testid="link-japanese-portfolio"
-            >
-              日本語で見る
-            </a>
           </motion.div>
         </div>
       </div>
