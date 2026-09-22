@@ -1,0 +1,43 @@
+Modernize the visual design of my portfolio site while keeping all existing 
+content, copy, and page structure (hero, About Me, case studies, password-
+protected section, footer, EN/JA language toggle) exactly as they are.
+
+BRAND TO KEEP:
+- Colors: warm off-white (#FCFAF8), dark charcoal (#3A312C), dusty rose 
+  accent (#C97B6E)
+- Playfair Display for headings (pair Japanese headings with Shippori 
+  Mincho or Zen Old Mincho for the JA version)
+- Overall tone: elegant, editorial, professional — not playful or startup-y
+
+DESIGN DIRECTION — update these specifically:
+1. Typography: make the hero name/headline oversized and expressive — let 
+   it be the dominant visual element on the page rather than a modest 
+   centered line. Use a variable-weight font if possible so headings feel 
+   intentional, not default.
+2. Layout: break the strict centered/boxed grid in places — introduce 
+   asymmetry (offset text blocks, elements that bleed slightly off-center) 
+   so it doesn't read as a template. Keep case study content readable and 
+   well-aligned, but let the hero and section transitions feel more organic.
+3. Case study / project cards: restructure into a bento-grid layout — 
+   mixed card sizes (one large featured case study, smaller supporting 
+   tiles) instead of uniform equal-size cards.
+4. Motion: add subtle scroll-driven reveals (fade/slide as sections enter 
+   view) and micro-interactions on buttons and cards (gentle hover states, 
+   not bouncy or flashy). One deliberate animated moment on page load is 
+   fine; avoid animating everything.
+5. Depth: light use of layering/soft shadow or a touch of glassmorphism 
+   (blurred translucent panel) is fine for nav or card overlays — keep it 
+   subtle, not heavy-handed.
+6. Accessibility & performance: maintain WCAG-level color contrast, visible 
+   keyboard focus states, and lazy-load images. Don't sacrifice load speed 
+   for animation.
+
+DO NOT:
+- Change any copy, wording, or the EN/JA toggle behavior
+- Add stock photography, generic icons, or decorative elements unrelated 
+  to my actual work
+- Make it feel like a generic SaaS/startup template (no default gradient 
+  cards, no all-caps eyebrow labels everywhere, no emoji as icons)
+
+Show me the hero section first before applying changes site-wide, so I can 
+approve the direction.
