@@ -10,10 +10,10 @@ export function FooterJa() {
         
         <div className="text-center md:text-left">
           <a href="#top" className="font-serif text-3xl font-semibold tracking-wide text-background mb-4 inline-block">
-            Satoko Gruson.
+            サトコ・グルソン。
           </a>
           <p className="text-background/60 max-w-sm text-balance">
-            Webプロダクトマネージャー、UI/UXデザイナー、フロントエンド開発者。東京を拠点に活動しています。
+            デジタルプロダクトマネージャー、UI/UXデザイナー、Web UX&amp;コンテンツスペシャリスト。東京を拠点に活動しています。
           </p>
         </div>
 

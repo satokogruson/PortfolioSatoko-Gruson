@@ -12,7 +12,7 @@ export function Footer() {
             Satoko Gruson.
           </a>
           <p className="text-background/60 max-w-sm text-balance">
-            Web Product Manager, UI/UX Designer, and Frontend Developer based in Tokyo, Japan.
+            Digital Product Manager, UI/UX Designer, Web UX &amp; Content Specialist. Based in Tokyo.
           </p>
         </div>
 
