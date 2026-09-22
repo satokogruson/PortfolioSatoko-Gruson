@@ -1,0 +1,42 @@
+<svg width="1800" height="1200" viewBox="0 0 1800 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="base" x1="0" y1="0" x2="1800" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4E8E5"/>
+      <stop offset=".42" stop-color="#EBD6D3"/>
+      <stop offset="1" stop-color="#F6F0EA"/>
+    </linearGradient>
+    <linearGradient id="planeA" x1="0" y1="120" x2="1450" y2="980" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9F3" stop-opacity=".86"/>
+      <stop offset=".72" stop-color="#F2D3D2" stop-opacity=".48"/>
+      <stop offset="1" stop-color="#C78888" stop-opacity=".18"/>
+    </linearGradient>
+    <linearGradient id="planeB" x1="1650" y1="0" x2="180" y2="1200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D99B9C" stop-opacity=".25"/>
+      <stop offset=".5" stop-color="#FFF8F0" stop-opacity=".38"/>
+      <stop offset="1" stop-color="#E5BFC0" stop-opacity=".56"/>
+    </linearGradient>
+    <linearGradient id="seam" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#9C626A" stop-opacity=".18"/>
+      <stop offset=".45" stop-color="#FFF7F1" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#9C626A" stop-opacity=".04"/>
+    </linearGradient>
+    <filter id="grain" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" seed="19"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .075"/></feComponentTransfer>
+    </filter>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="25"/>
+    </filter>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#base)"/>
+  <path d="M-100 80L1190-180L1900 390L930 810L-100 570V80Z" fill="#B87A7E" opacity=".12" filter="url(#softShadow)"/>
+  <path d="M-100 0H1320L380 1200H-100V0Z" fill="url(#planeA)"/>
+  <path d="M680-80L1900 210V1200H106L680-80Z" fill="url(#planeB)" opacity=".9"/>
+  <path d="M1780-80L1130 1200H500L1320-80H1780Z" fill="#FFF9F4" opacity=".46"/>
+  <path d="M-100 1010L570 430L1770 870L1840 1250H-100V1010Z" fill="#D69B9E" opacity=".18"/>
+  <path d="M0 665L960 95L1800 490" stroke="url(#seam)" stroke-width="4"/>
+  <path d="M380 1200L1320 0" stroke="#FFF9F3" stroke-opacity=".56" stroke-width="3"/>
+  <path d="M107 1200L870 0" stroke="#9D676D" stroke-opacity=".12" stroke-width="3"/>
+  <rect width="1800" height="1200" filter="url(#grain)" opacity=".52"/>
+</svg>

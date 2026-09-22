@@ -6,5 +6,8 @@ export const modules: ModuleMap = {
   "./components/mockups/portfolio-hero/CharcoalGraphic.tsx": () => import("../components/mockups/portfolio-hero/CharcoalGraphic.tsx"),
   "./components/mockups/portfolio-hero/Current.tsx": () => import("../components/mockups/portfolio-hero/Current.tsx"),
   "./components/mockups/portfolio-hero/Editorial.tsx": () => import("../components/mockups/portfolio-hero/Editorial.tsx"),
-  "./components/mockups/portfolio-hero/Graphic.tsx": () => import("../components/mockups/portfolio-hero/Graphic.tsx")
+  "./components/mockups/portfolio-hero/Graphic.tsx": () => import("../components/mockups/portfolio-hero/Graphic.tsx"),
+  "./components/mockups/portfolio-hero/PinkLight.tsx": () => import("../components/mockups/portfolio-hero/PinkLight.tsx"),
+  "./components/mockups/portfolio-hero/PinkLinework.tsx": () => import("../components/mockups/portfolio-hero/PinkLinework.tsx"),
+  "./components/mockups/portfolio-hero/PinkPaper.tsx": () => import("../components/mockups/portfolio-hero/PinkPaper.tsx")
 };
