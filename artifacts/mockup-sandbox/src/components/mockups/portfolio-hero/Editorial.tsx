@@ -4,7 +4,13 @@ import "./_group.css";
 
 const navLinks = ["Home", "Case Studies", "Projects", "About"];
 
-export function Editorial() {
+type EditorialProps = {
+  backgroundImage?: string;
+};
+
+export function Editorial({
+  backgroundImage = "/__mockup/images/hero-bg.png",
+}: EditorialProps = {}) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [hasScrolled, setHasScrolled] = useState(false);
 
@@ -131,7 +137,7 @@ export function Editorial() {
           id="top"
           className="relative flex min-h-[100dvh] items-center overflow-hidden pt-24"
           style={{
-            backgroundImage: "url('/__mockup/images/hero-bg.png')",
+            backgroundImage: `url('${backgroundImage}')`,
             backgroundSize: "cover",
             backgroundPosition: "center",
           }}
