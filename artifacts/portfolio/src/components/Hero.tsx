@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowDown, Figma, MapPin } from "lucide-react";
+import { ArrowDown, MapPin } from "lucide-react";
 
 export function Hero() {
   return (
@@ -59,13 +59,13 @@ export function Hero() {
 
       {/* Content */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full">
-        <div className="max-w-3xl">
+        <div className="max-w-4xl mx-auto text-center">
           {/* "Hi, I'm" — appears with the name */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut" }}
-            className="flex items-center gap-2 text-black/70 font-medium mb-6 tracking-wide uppercase text-sm"
+            className="flex items-center justify-center gap-2 text-black/70 font-medium mb-6 tracking-wide uppercase text-sm"
           >
             <span>Hi, I'm</span>
           </motion.div>
@@ -85,7 +85,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.3 }}
-            className="text-xl md:text-2xl text-black/80 font-medium mb-4 flex flex-wrap items-center gap-x-3 gap-y-2 text-balance"
+            className="text-xl md:text-2xl text-black/80 font-medium mb-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-balance"
           >
             <span>Digital Product Manager</span>
             <span className="text-black/30 hidden sm:inline">•</span>
@@ -99,7 +99,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.45 }}
-            className="flex items-center gap-2 text-black/60 mb-8"
+            className="flex items-center justify-center gap-2 text-black/60 mb-8"
           >
             <MapPin size={18} className="text-black/60" />
             <span>Tokyo, Japan</span>
@@ -110,36 +110,17 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.6 }}
-            className="text-lg text-black/70 max-w-2xl leading-relaxed mb-12 text-balance"
+            className="text-lg text-black/70 max-w-2xl mx-auto leading-relaxed mb-12 text-balance"
           >
             My multi-cultural background and a master's in Translation & Localization Management will help you broaden your target audience!{" "}
           </motion.p>
-
-          {/* Figma capability — surfaced early for recruiter review */}
-          <motion.div
-            initial={{ opacity: 0, y: 16 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, ease: "easeInOut", delay: 0.7 }}
-            className="mb-10 max-w-2xl rounded-2xl border border-black/15 bg-white/40 px-5 py-4 backdrop-blur-sm"
-            data-testid="text-figma-experience"
-          >
-            <div className="flex items-start gap-3">
-              <Figma size={19} className="mt-0.5 shrink-0 text-black/70" />
-              <div>
-                <p className="text-sm font-semibold text-black/80">Figma-led product design</p>
-                <p className="mt-1 text-sm leading-relaxed text-black/65">
-                  Information architecture, user flows, wireframes, UI design, prototypes, and developer handoff.
-                </p>
-              </div>
-            </div>
-          </motion.div>
 
           {/* Buttons — last */}
           <motion.div
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.8 }}
-            className="flex flex-wrap items-center gap-4"
+            className="flex flex-wrap items-center justify-center gap-4"
           >
             <a
               href="#experience"
