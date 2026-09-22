@@ -35,14 +35,14 @@ export function AboutJa() {
                 多文化的なバックグラウンドと、翻訳・ローカライゼーションマネジメントの修士号が、ユーザー体験に対する独自の視点を与えてくれます。単にインターフェースを作るのではなく、ビジネスゴールを世界に通用する直感的な体験へと「翻訳」し、ブランドがターゲットオーディエンスを無理なく広げられるよう支援しています。
               </p>
               <p>
-                Figmaで洗練されたユーザーフローを設計するときも、Reactでレスポンシブなコンポーネントを実装するときも、プロダクトのライフサイクルをマネジメントするときも——私が一番力を発揮できるのは、創造性とロジックが交わる場所です。
+                Figmaで洗練されたユーザーフローを設計するときも、行動データをもとにコンテンツ戦略や実験施策を組み立てるときも、プロダクトのライフサイクルをマネジメントするときも——私が一番力を発揮できるのは、創造性とロジックが交わる場所です。
               </p>
             </div>
 
             <div className="mt-10 pt-10 border-t border-border/50 grid grid-cols-2 gap-8">
               <div>
                 <h4 className="font-serif text-2xl text-foreground mb-2">3年以上</h4>
-                <p className="text-sm text-muted-foreground uppercase tracking-wider">実務経験</p>
+                <p className="text-sm text-muted-foreground uppercase tracking-wider">UX/プロダクト実務経験</p>
               </div>
               <div>
                 <h4 className="font-serif text-2xl text-foreground mb-2">10件以上</h4>

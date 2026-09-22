@@ -39,8 +39,9 @@ export function About() {
                 broaden their target audience effortlessly.
               </p>
               <p>
-                Whether it's designing a clean user flow in Figma, coding responsive components in React, 
-                or managing a product's lifecycle, I thrive at the intersection of creativity and logic.
+                Whether it's designing a clean user flow in Figma, translating behavioral data into a content 
+                and experimentation strategy, or managing a product's lifecycle, I thrive at the intersection 
+                of creativity and logic.
               </p>
             </div>
 
