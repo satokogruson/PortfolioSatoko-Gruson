@@ -75,9 +75,9 @@ export function Hero() {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
-            className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-black leading-[1.1] mb-6"
+            className="text-[2.65rem] sm:text-6xl md:text-7xl lg:text-8xl font-serif text-black leading-[1.1] mb-6 whitespace-nowrap"
           >
-            Satoko <br /> Gruson
+            Satoko Gruson
           </motion.h1>
 
           {/* Title — 0.3s after name */}
