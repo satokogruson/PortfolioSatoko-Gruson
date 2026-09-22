@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { ArrowDown } from "lucide-react";
 
 export function HeroJa() {
   return (
@@ -113,10 +112,9 @@ export function HeroJa() {
           >
             <a
               href="#experience"
-              className="group w-64 flex items-center justify-center gap-3 px-8 py-4 bg-black text-white rounded-full font-medium whitespace-nowrap shadow-lg shadow-black/20 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+              className="group w-64 flex items-center justify-center px-8 py-4 bg-black text-white rounded-full font-medium whitespace-nowrap shadow-lg shadow-black/20 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
             >
               実績を見る
-              <ArrowDown size={18} className="group-hover:translate-y-1 transition-transform duration-300" />
             </a>
             <a
               href="#about"
