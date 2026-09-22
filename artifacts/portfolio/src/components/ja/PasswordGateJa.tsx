@@ -147,7 +147,7 @@ export function PasswordGateJa({ children }: PasswordGateJaProps) {
             type="submit"
             className="px-8 py-3.5 rounded-full bg-foreground text-background font-medium text-sm hover:bg-primary hover:text-primary-foreground transition-all duration-300 shadow-md hover:shadow-lg hover:-translate-y-0.5"
           >
-            ロックを解除
+            閲覧する
           </button>
         </form>
       </div>
