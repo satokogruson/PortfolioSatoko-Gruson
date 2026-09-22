@@ -76,7 +76,7 @@ export function HeroJa() {
             transition={{ duration: 0.7, ease: "easeInOut", delay: 0.1 }}
             className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-serif text-black leading-[1.1] mb-6 whitespace-nowrap"
           >
-            サトコ・グルソン
+            グルソン聡子
           </motion.h1>
 
           {/* Professional titles */}
