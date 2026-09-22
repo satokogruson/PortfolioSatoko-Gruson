@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Zen+Maru+Gothic:wght@400;500;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
@@ -309,11 +309,23 @@ html {
 /* Japanese copy needs natural glyph spacing and language-aware wrapping.
    Scope these rules to /ja so the English typography remains unchanged. */
 .japanese-typography {
+  font-family: 'Zen Maru Gothic', 'Hiragino Maru Gothic ProN', 'Yu Gothic', sans-serif;
   line-break: strict;
   word-break: normal;
   overflow-wrap: anywhere;
   font-kerning: normal;
   font-variant-east-asian: proportional-width;
+}
+
+.japanese-typography h1,
+.japanese-typography h2,
+.japanese-typography h3,
+.japanese-typography h4,
+.japanese-typography h5,
+.japanese-typography h6,
+.japanese-typography .font-serif,
+.japanese-typography .font-sans {
+  font-family: 'Zen Maru Gothic', 'Hiragino Maru Gothic ProN', 'Yu Gothic', sans-serif;
 }
 
 .japanese-typography p,
