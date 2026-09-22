@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, type MouseEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -13,6 +13,11 @@ const navLinks = [
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const switchToJapanese = (event: MouseEvent<HTMLAnchorElement>) => {
+    event.preventDefault();
+    window.location.assign(`${import.meta.env.BASE_URL}ja${window.location.hash}`);
+  };
 
   useEffect(() => {
     const handleScroll = () => {
@@ -68,6 +73,7 @@ export function Navigation() {
           </a>
           <a
             href={`${import.meta.env.BASE_URL}ja`}
+            onClick={switchToJapanese}
             className="text-sm font-medium text-foreground/80 hover:text-primary transition-colors"
             data-testid="link-japanese-navigation"
           >
@@ -112,7 +118,10 @@ export function Navigation() {
             </a>
             <a
               href={`${import.meta.env.BASE_URL}ja`}
-              onClick={() => setMobileMenuOpen(false)}
+              onClick={(event) => {
+                setMobileMenuOpen(false);
+                switchToJapanese(event);
+              }}
               className="text-lg font-medium text-foreground hover:text-primary transition-colors"
               data-testid="link-japanese-mobile-navigation"
             >
