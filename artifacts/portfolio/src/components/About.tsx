@@ -48,8 +48,8 @@ export function About() {
 
             <div className="mt-10 pt-10 border-t border-border/50 grid grid-cols-2 gap-8">
               <div>
-                <h4 className="font-serif text-2xl text-foreground mb-2">3+</h4>
-                <p className="text-sm text-muted-foreground uppercase tracking-wider">Years Experience</p>
+                <h4 className="font-serif text-2xl text-foreground mb-2">3+ Years</h4>
+                <p className="text-sm text-muted-foreground uppercase tracking-wider">UX / Product Experience</p>
               </div>
               <div>
                 <h4 className="font-serif text-2xl text-foreground mb-2">10+</h4>
