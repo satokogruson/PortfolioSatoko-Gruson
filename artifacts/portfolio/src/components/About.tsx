@@ -29,7 +29,7 @@ export function About() {
             
             <div className="space-y-6 text-lg text-foreground/80 leading-relaxed text-balance">
               <p>
-                As a Web Product Manager, UI/UX Designer, and Frontend Developer based in Tokyo, 
+                As a Digital Product Manager, UI/UX Designer, and Web UX &amp; Content Specialist based in Tokyo, 
                 I wear many hats to ensure digital products are not just built, but crafted with purpose.
               </p>
               <p>
@@ -41,7 +41,8 @@ export function About() {
               <p>
                 Whether it's designing a clean user flow in Figma, translating behavioral data into a content 
                 and experimentation strategy, or managing a product's lifecycle, I thrive at the intersection 
-                of creativity and logic.
+                of creativity and logic. I've also taught myself front-end coding, which lets me build small 
+                working prototypes and speak the same language as the engineers I work with.
               </p>
             </div>
 
