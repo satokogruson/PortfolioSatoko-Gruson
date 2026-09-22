@@ -111,6 +111,7 @@ export function Experience() {
         </div>
 
         {/* ── Case Study 01: AI Intake Navigator ─────────────────────── */}
+        {false && (
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -279,8 +280,9 @@ export function Experience() {
             </div>
           </div>
         </motion.div>
+        )}
 
-        {/* ── Case Study 02: Adobe Japan ─────────────────────────────── */}
+        {/* ── Case Study 01: Adobe Japan ─────────────────────────────── */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -292,7 +294,7 @@ export function Experience() {
 
             {/* Top bar */}
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 02 / 04</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 01 / 03</span>
               <a href="https://www.adobe.com/jp/" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-sm text-background/70 hover:text-background transition-colors">
                 adobe.com/jp <ArrowUpRight size={14} />
@@ -703,7 +705,7 @@ export function Experience() {
           <div className="rounded-2xl border border-border bg-card overflow-hidden">
 
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 03 / 04</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 02 / 03</span>
               <span className="text-sm text-background/70">Freelance</span>
             </div>
 
@@ -814,7 +816,7 @@ export function Experience() {
           <div className="rounded-2xl border border-border bg-card overflow-hidden">
 
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 04 / 04</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">Case Study 03 / 03</span>
               <span className="text-sm text-background/70">Freelance · Austria</span>
             </div>
 

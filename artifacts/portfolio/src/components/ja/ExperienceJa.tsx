@@ -111,6 +111,7 @@ export function ExperienceJa() {
         </div>
 
         {/* ── Case Study 01: AI Intake Navigator ─────────────────────── */}
+        {false && (
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -279,8 +280,9 @@ export function ExperienceJa() {
             </div>
           </div>
         </motion.div>
+        )}
 
-        {/* ── Case Study 02: Adobe Japan ─────────────────────────────── */}
+        {/* ── Case Study 01: Adobe Japan ─────────────────────────────── */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -292,7 +294,7 @@ export function ExperienceJa() {
 
             {/* Top bar */}
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">ケーススタディ 02 / 04</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">ケーススタディ 01 / 03</span>
               <a href="https://www.adobe.com/jp/" target="_blank" rel="noopener noreferrer"
                 className="flex items-center gap-1.5 text-sm text-background/70 hover:text-background transition-colors">
                 adobe.com/jp <ArrowUpRight size={14} />
@@ -693,7 +695,7 @@ export function ExperienceJa() {
           </div>
         </motion.div>
 
-        {/* ── Case Study 03: Local Happinez ─────────────────────────── */}
+        {/* ── Case Study 02: Local Happinez ─────────────────────────── */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -703,7 +705,7 @@ export function ExperienceJa() {
           <div className="rounded-2xl border border-border bg-card overflow-hidden">
 
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">ケーススタディ 03 / 04</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">ケーススタディ 02 / 03</span>
               <span className="text-sm text-background/70">フリーランス</span>
             </div>
 
@@ -804,7 +806,7 @@ export function ExperienceJa() {
           </div>
         </motion.div>
 
-        {/* ── Case Study 04: Medicus Practice ───────────────────────── */}
+        {/* ── Case Study 03: Medicus Practice ───────────────────────── */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -814,7 +816,7 @@ export function ExperienceJa() {
           <div className="rounded-2xl border border-border bg-card overflow-hidden">
 
             <div className="bg-foreground text-background px-8 py-5 flex flex-wrap items-center justify-between gap-4">
-              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">ケーススタディ 04 / 04</span>
+              <span className="text-xs font-mono text-background/50 uppercase tracking-widest">ケーススタディ 03 / 03</span>
               <span className="text-sm text-background/70">フリーランス · オーストリア</span>
             </div>
 
