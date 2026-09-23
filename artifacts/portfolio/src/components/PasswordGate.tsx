@@ -45,8 +45,8 @@ export function PasswordGate({ children }: PasswordGateProps) {
         <div
           className="flex items-center justify-between px-6 md:px-12 py-3 cursor-pointer select-none group"
           style={{
-            background: "#fbf4f5",
-            borderBottom: expanded ? "none" : "1px solid #eadfdf",
+            background: "#f4dce2",
+            borderBottom: expanded ? "none" : "1px solid #e7c9d0",
           }}
           onClick={() => setExpanded(!expanded)}
         >
@@ -85,7 +85,7 @@ export function PasswordGate({ children }: PasswordGateProps) {
   return (
     <div
       className="relative py-14 md:py-20 flex flex-col items-center justify-center overflow-hidden"
-      style={{ background: "#fbf4f5" }}
+      style={{ background: "#f4dce2" }}
     >
       {/* Soft orb */}
       <div
