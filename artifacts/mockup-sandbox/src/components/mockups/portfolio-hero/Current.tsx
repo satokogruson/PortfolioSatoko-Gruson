@@ -47,7 +47,7 @@ export function Current() {
         id="top"
         className="relative flex min-h-screen items-center overflow-hidden pt-20"
         style={{
-          backgroundImage: "url('/__mockup/images/hero-bg.png')",
+           backgroundImage: "url('/__mockup/images/current-hero-matte-clay.png')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
