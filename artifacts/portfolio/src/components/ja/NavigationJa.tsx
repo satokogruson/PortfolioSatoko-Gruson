@@ -46,10 +46,9 @@ export function NavigationJa() {
           className="flex items-center"
         >
           <img
-            src="/images/sg-logo.png"
+            src={`${import.meta.env.BASE_URL}images/sg-logo-updated.png`}
             alt="SG Logo"
             className="h-10 w-10 object-contain transition-all duration-300"
-            style={{ filter: "sepia(1) saturate(2) hue-rotate(318deg) brightness(0.75)" }}
           />
         </a>
 

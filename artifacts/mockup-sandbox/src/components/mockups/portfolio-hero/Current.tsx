@@ -15,10 +15,9 @@ export function Current() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 md:px-12">
           <a href="#top" data-testid="link-current-home">
             <img
-              src="/__mockup/images/sg-logo.png"
+              src="/__mockup/images/sg-logo-updated.png"
               alt="SG Logo"
               className="h-10 w-10 object-contain"
-              style={{ filter: "sepia(1) saturate(2) hue-rotate(318deg) brightness(0.75)" }}
             />
           </a>
           <nav className="hidden items-center gap-8 md:flex">
