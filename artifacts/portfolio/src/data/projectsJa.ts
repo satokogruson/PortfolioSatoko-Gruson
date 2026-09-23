@@ -50,23 +50,23 @@ export const projectsDataJa: Project[] = [
     title: "Savor the Globe",
     description: "地元で愛される味から世界的な名物まで、世界の食文化を象徴するトップ5の料理を発見できるAIジェネレーター。",
     category: "Frontend",
-    link: "https://top-5-best-food-ai-generator.replit.app",
-    image: "/images/savor-the-globe.png"
+    link: "https://satokogruson.github.io/Top-5-best-food-AI-Generator/",
+    image: `${import.meta.env.BASE_URL}images/savor-the-globe.png`
   },
   {
     id: "world-clock",
     title: "World Clock App",
     description: "世界中のタイムゾーンを効率的に確認できるダイナミックなツール。生産性とグローバルコミュニケーションの向上を目的に設計されています。",
     category: "Frontend",
-    link: "https://world-clock-responsive.replit.app/",
-    image: "/images/world-clock.png"
+    link: "https://satokogruson.github.io/world-clock-app/",
+    image: `${import.meta.env.BASE_URL}images/world-clock.png`
   },
   {
     id: "weather-app",
     title: "Weather App",
     description: "リアルタイムの天気予報を取得。高度なインタラクティビティとカスタマイズ性を備えた天気アプリケーション。",
     category: "Frontend",
-    link: "https://Weather-app-gruson.replit.app",
+    link: "https://satokogruson.github.io/weather-app/",
     image: "https://satokogruson.github.io/img/weather-app.png"
   },
   {
