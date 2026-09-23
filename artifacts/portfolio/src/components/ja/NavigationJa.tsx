@@ -112,7 +112,7 @@ export function NavigationJa() {
             ))}
             <a
               href="mailto:fsjm1210@gmail.com"
-              className="mt-4 px-6 py-3 rounded-full text-center font-medium bg-primary text-primary-foreground"
+              className="mt-4 px-6 py-3 rounded-full text-center font-medium bg-foreground text-background hover:bg-primary hover:text-primary-foreground transition-all"
             >
               お問い合わせ
             </a>

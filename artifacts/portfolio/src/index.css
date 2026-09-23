@@ -78,45 +78,45 @@
   --elevate-2: rgba(0,0,0, .08);
 
   --background: 30 33% 98%;
-  --foreground: 20 14% 20%;
-  --border: 30 20% 90%;
+  --foreground: 23 13% 20%;
+  --border: 25 19% 85%;
   
   --card: 0 0% 100%;
-  --card-foreground: 20 14% 20%;
-  --card-border: 30 20% 92%;
+  --card-foreground: 23 13% 20%;
+  --card-border: 25 19% 90%;
 
   --sidebar: 30 33% 96%;
-  --sidebar-foreground: 20 14% 25%;
-  --sidebar-border: 30 20% 90%;
-  --sidebar-primary: 350 40% 65%;
+  --sidebar-foreground: 23 13% 20%;
+  --sidebar-border: 25 19% 85%;
+  --sidebar-primary: 17 31% 51%;
   --sidebar-primary-foreground: 0 0% 100%;
-  --sidebar-accent: 30 20% 92%;
-  --sidebar-accent-foreground: 20 14% 20%;
-  --sidebar-ring: 350 40% 65%;
+  --sidebar-accent: 25 28% 91%;
+  --sidebar-accent-foreground: 23 13% 20%;
+  --sidebar-ring: 17 31% 51%;
 
   --popover: 0 0% 100%;
-  --popover-foreground: 20 14% 20%;
-  --popover-border: 30 20% 90%;
+  --popover-foreground: 23 13% 20%;
+  --popover-border: 25 19% 85%;
 
-  --primary: 350 40% 65%;
+  --primary: 17 31% 51%;
   --primary-foreground: 0 0% 100%;
 
-  --secondary: 30 15% 92%;
-  --secondary-foreground: 20 14% 20%;
+  --secondary: 25 28% 91%;
+  --secondary-foreground: 23 13% 20%;
 
-  --muted: 30 20% 95%;
-  --muted-foreground: 25 10% 45%;
+  --muted: 25 25% 95%;
+  --muted-foreground: 23 12% 39%;
 
-  --accent: 20 30% 85%;
-  --accent-foreground: 20 14% 20%;
+  --accent: 25 30% 85%;
+  --accent-foreground: 23 13% 20%;
 
   --destructive: 0 84% 60%;
   --destructive-foreground: 0 0% 100%;
 
-  --input: 30 20% 88%;
-  --ring: 350 40% 65%;
+  --input: 25 19% 85%;
+  --ring: 17 31% 51%;
   
-  --chart-1: 350 40% 65%;
+  --chart-1: 17 31% 51%;
   --chart-2: 25 30% 70%;
   --chart-3: 200 20% 65%;
   --chart-4: 40 40% 65%;
@@ -124,7 +124,7 @@
 
   --app-font-sans: 'DM Sans', sans-serif;
   --app-font-serif: 'Playfair Display', serif;
-  --app-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  --app-font-mono: 'DM Sans', sans-serif;
   
   --radius: 1rem;
   
@@ -169,17 +169,17 @@
   --sidebar: 20 14% 10%;
   --sidebar-foreground: 30 20% 90%;
   --sidebar-border: 20 10% 20%;
-  --sidebar-primary: 350 40% 65%;
+  --sidebar-primary: 17 31% 51%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 20 14% 20%;
   --sidebar-accent-foreground: 30 33% 98%;
-  --sidebar-ring: 350 40% 65%;
+  --sidebar-ring: 17 31% 51%;
 
   --popover: 20 14% 15%;
   --popover-foreground: 30 33% 98%;
   --popover-border: 20 10% 25%;
 
-  --primary: 350 40% 65%;
+  --primary: 17 31% 51%;
   --primary-foreground: 0 0% 100%;
 
   --secondary: 20 10% 22%;
@@ -195,9 +195,9 @@
   --destructive-foreground: 0 0% 100%;
 
   --input: 20 10% 28%;
-  --ring: 350 40% 65%;
+  --ring: 17 31% 51%;
   
-  --chart-1: 350 40% 65%;
+  --chart-1: 17 31% 51%;
   --chart-2: 25 30% 70%;
   --chart-3: 200 20% 65%;
   --chart-4: 40 40% 65%;
@@ -324,7 +324,8 @@ html {
 .japanese-typography h5,
 .japanese-typography h6,
 .japanese-typography .font-serif,
-.japanese-typography .font-sans {
+.japanese-typography .font-sans,
+.japanese-typography .font-mono {
   font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', sans-serif;
 }
 
