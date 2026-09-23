@@ -2,6 +2,7 @@ import { useState, useEffect, type MouseEvent } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useLocation } from "wouter";
 
 const navLinks = [
   { name: "Home", href: "#top" },
@@ -13,10 +14,11 @@ const navLinks = [
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [, setLocation] = useLocation();
 
   const switchToJapanese = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
-    window.location.assign(`${import.meta.env.BASE_URL}ja${window.location.hash}`);
+    setLocation("/ja");
   };
 
   useEffect(() => {
