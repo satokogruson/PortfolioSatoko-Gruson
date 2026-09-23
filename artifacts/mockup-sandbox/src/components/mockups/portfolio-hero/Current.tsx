@@ -57,22 +57,24 @@ export function Current() {
         <div className="relative z-10 mx-auto w-full max-w-7xl px-6 md:px-12">
           <div className="mx-auto max-w-4xl text-center">
             <div className="mb-6 text-sm font-medium uppercase tracking-wide text-black/70">Hi, I'm</div>
-            <h1 className="font-display mb-6 whitespace-nowrap text-[2.65rem] leading-[1.1] text-black sm:text-6xl md:text-7xl lg:text-8xl">
-              Satoko Gruson
-            </h1>
-            <div className="mb-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xl font-medium text-black/80 md:text-2xl">
-              <span>Digital Product Manager</span><span className="hidden text-black/30 sm:inline">•</span>
-              <span>Web UX &amp; Content Specialist</span><span className="hidden text-black/30 sm:inline">•</span>
-              <span>UI/UX Designer</span>
-            </div>
-            <div className="mb-8 flex items-center justify-center gap-2 text-black/60">
-              <MapPin size={18} /><span>Tokyo, Japan</span>
-            </div>
-            <p className="mx-auto mb-12 max-w-2xl text-lg leading-relaxed text-black/70">
-              My multi-cultural background and a master's in Translation &amp; Localization Management will help you broaden your target audience!{" "}
-            </p>
+             <div className="relative isolate mx-auto mb-1 max-w-5xl rounded-[2rem] px-3 py-3 before:absolute before:inset-0 before:-z-10 before:rounded-[2rem] before:bg-black/[0.045] before:blur-2xl">
+               <h1 className="font-display mb-6 whitespace-nowrap text-[2.65rem] leading-[1.1] text-black sm:text-6xl md:text-7xl lg:text-8xl">
+                 Satoko Gruson
+               </h1>
+               <div className="mb-4 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-xl font-medium text-black/80 md:text-2xl">
+                 <span>Digital Product Manager</span><span className="hidden text-black/30 sm:inline">•</span>
+                 <span>Web UX &amp; Content Specialist</span><span className="hidden text-black/30 sm:inline">•</span>
+                 <span>UI/UX Designer</span>
+               </div>
+               <div className="mb-8 flex items-center justify-center gap-2 text-black/60">
+                 <MapPin size={18} /><span>Tokyo, Japan</span>
+               </div>
+               <p className="mx-auto max-w-2xl text-lg leading-relaxed text-black/70">
+                 My multi-cultural background and a master's in Translation &amp; Localization Management will help you broaden your target audience!{" "}
+               </p>
+             </div>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              <a href="#" className="flex w-52 items-center justify-center gap-3 rounded-full bg-black px-8 py-4 font-medium text-white shadow-lg">
+               <a href="#" className="flex w-56 items-center justify-center gap-3 whitespace-nowrap rounded-full bg-black px-6 py-4 font-medium text-white shadow-lg">
                 View case studies <ArrowDown size={18} />
               </a>
               <a href="#" className="flex w-52 items-center justify-center rounded-full border border-black/30 px-8 py-4 font-medium text-black">
