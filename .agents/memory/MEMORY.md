@@ -1,0 +1,1 @@
+- [Japanese portfolio name](japanese-portfolio-name.md) — keep the established Japanese name in native order when carrying over English hero designs.
