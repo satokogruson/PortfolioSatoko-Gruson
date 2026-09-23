@@ -45,8 +45,8 @@ export function PasswordGate({ children }: PasswordGateProps) {
         <div
           className="flex items-center justify-between px-6 md:px-12 py-3 cursor-pointer select-none group"
           style={{
-            background: "#f4dce2",
-            borderBottom: expanded ? "none" : "1px solid #e7c9d0",
+            background: "#ddc8b9",
+            borderBottom: expanded ? "none" : "1px solid #c3a58f",
           }}
           onClick={() => setExpanded(!expanded)}
         >
@@ -85,7 +85,7 @@ export function PasswordGate({ children }: PasswordGateProps) {
   return (
     <div
       className="relative py-14 md:py-20 flex flex-col items-center justify-center overflow-hidden"
-      style={{ background: "#f4dce2" }}
+      style={{ background: "#ddc8b9" }}
     >
       {/* Soft orb */}
       <div
@@ -96,7 +96,7 @@ export function PasswordGate({ children }: PasswordGateProps) {
           top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          background: "radial-gradient(circle, rgba(201, 123, 110, 0.12) 0%, transparent 70%)",
+          background: "radial-gradient(circle, rgba(169, 114, 92, 0.12) 0%, transparent 70%)",
           filter: "blur(50px)",
         }}
       />
@@ -105,7 +105,7 @@ export function PasswordGate({ children }: PasswordGateProps) {
         className={`relative z-10 max-w-md w-full mx-auto px-6 text-center transition-transform ${shake ? "animate-shake" : ""}`}
         style={shake ? { animation: "shake 0.5s ease" } : {}}
       >
-        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5" style={{ background: "hsl(350 50% 72%)", boxShadow: "0 4px 18px hsl(350 50% 72% / 0.35)" }}>
+        <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-5" style={{ background: "#a9725c", boxShadow: "0 4px 18px rgba(169, 114, 92, 0.3)" }}>
           <Lock size={24} className="text-white" strokeWidth={2.5} />
         </div>
         <h3 className="text-2xl font-serif text-foreground mb-2">Protected Content</h3>
