@@ -50,23 +50,23 @@ export const projectsData: Project[] = [
     title: "Savor the Globe",
     description: "From local favorites to global sensations, find the top five dishes that define dining around the world.",
     category: "Frontend",
-    link: "https://top-5-best-food-ai-generator.replit.app",
-    image: "/images/savor-the-globe.png"
+    link: "https://satokogruson.github.io/Top-5-best-food-AI-Generator/",
+    image: `${import.meta.env.BASE_URL}images/savor-the-globe.png`
   },
   {
     id: "world-clock",
     title: "World Clock App",
     description: "A dynamic tool to view global time zones efficiently. Designed to improve productivity and global communication.",
     category: "Frontend",
-    link: "https://world-clock-responsive.replit.app/",
-    image: "/images/world-clock.png"
+    link: "https://satokogruson.github.io/world-clock-app/",
+    image: `${import.meta.env.BASE_URL}images/world-clock.png`
   },
   {
     id: "weather-app",
     title: "Weather App",
     description: "Get real-time weather updates with this highly interactive and customizable weather application.",
     category: "Frontend",
-    link: "https://Weather-app-gruson.replit.app",
+    link: "https://satokogruson.github.io/weather-app/",
     image: "https://satokogruson.github.io/img/weather-app.png"
   },
   {
