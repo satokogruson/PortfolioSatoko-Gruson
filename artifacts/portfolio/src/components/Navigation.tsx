@@ -46,9 +46,9 @@ export function Navigation() {
           className="flex items-center"
         >
           <img
-            src={`${import.meta.env.BASE_URL}images/sg-logo-updated.png`}
+            src={`${import.meta.env.BASE_URL}images/sg-logo-bold.png`}
             alt="SG Logo"
-            className="h-10 w-10 object-contain transition-all duration-300"
+            className="h-12 w-12 object-contain transition-all duration-300"
           />
         </a>
 
