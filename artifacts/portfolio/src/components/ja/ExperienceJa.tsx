@@ -394,7 +394,7 @@ export function ExperienceJa() {
                       <span className="text-xs text-muted-foreground ml-2 font-mono">adobe.com/jp/creativecloud — Plans page (GenAI comparison)</span>
                     </div>
                     <img
-                      src="/images/firefly/cc-plans-genai.png"
+                      src={`${import.meta.env.BASE_URL}images/firefly/cc-plans-genai.png`}
                       alt="Adobe Creative Cloud plans page Japan — GenAI credit comparison section"
                       className="w-full h-auto block"
                     />
@@ -499,7 +499,7 @@ export function ExperienceJa() {
                     </div>
                     <div className="overflow-y-auto" style={{ maxHeight: "520px" }}>
                       <img
-                        src="/images/firefly/use-case-page.png"
+                        src={`${import.meta.env.BASE_URL}images/firefly/use-case-page.png`}
                         alt="Firefly Japan use case page — culturalised full-page view"
                         className="w-full h-auto block"
                       />
@@ -572,8 +572,8 @@ export function ExperienceJa() {
                   {/* Screenshots — 2-up */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-5">
                     {[
-                      { src: "/images/firefly/text-to-image.png", label: "Text-to-Image ページ", url: "adobe.com/jp/products/firefly/features/text-to-image" },
-                      { src: "/images/firefly/ai-video.png", label: "AI Video Generator ページ", url: "adobe.com/jp/products/firefly/features/ai-video-generator" },
+                      { src: `${import.meta.env.BASE_URL}images/firefly/text-to-image.png`, label: "Text-to-Image ページ", url: "adobe.com/jp/products/firefly/features/text-to-image" },
+                      { src: `${import.meta.env.BASE_URL}images/firefly/ai-video.png`, label: "AI Video Generator ページ", url: "adobe.com/jp/products/firefly/features/ai-video-generator" },
                     ].map(({ src, label, url }) => (
                       <div key={label} className="rounded-xl overflow-hidden border border-border">
                         <div className="bg-secondary/40 px-3 py-2 border-b border-border flex items-center gap-2">
@@ -648,7 +648,7 @@ export function ExperienceJa() {
                     </div>
                     <div className="overflow-y-auto" style={{ maxHeight: "520px" }}>
                       <img
-                        src="/images/firefly/features-prompts.png"
+                        src={`${import.meta.env.BASE_URL}images/firefly/features-prompts.png`}
                         alt="Firefly Japan features and prompt suggestion page"
                         className="w-full h-auto block"
                       />
